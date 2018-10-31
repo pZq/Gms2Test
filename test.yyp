@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01eae050-0402-4468-ba59-33a523976e2b",
+            "Value": {
+                "id": "128aaef0-45f2-46c4-8860-9a086bd1a36a",
+                "resourcePath": "rooms\\GameLvl1\\GameLvl1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1aefbcaf-5516-4f8a-b585-c9937e558ddd",
             "Value": {
                 "id": "2537de0e-2be1-490c-b6c4-b0db57986096",
@@ -44,6 +52,14 @@
                 "id": "e2a81f7f-a2d5-4054-9afe-4ab685192507",
                 "resourcePath": "views\\1f85d3fc-c688-4765-90f7-cfcba65507c4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4089fb65-98eb-45c9-9016-717257a2caef",
+            "Value": {
+                "id": "136e0a35-3501-428d-b8e7-abecc699d2e6",
+                "resourcePath": "sprites\\spr_tileObj\\spr_tileObj.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -167,6 +183,14 @@
             }
         },
         {
+            "Key": "beaca9f6-b62f-4105-af09-ff3309fee742",
+            "Value": {
+                "id": "4470b001-9f3c-4832-b192-283ab302cf13",
+                "resourcePath": "sprites\\spr_background\\spr_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c0c439c1-d327-470d-a1d4-fe6b9931b757",
             "Value": {
                 "id": "4628ee9b-1c2d-43ef-b2d2-3f59e79e9a5b",
@@ -220,6 +244,14 @@
                 "id": "edd0a71e-9726-4180-b9ec-88d435cda119",
                 "resourcePath": "objects\\obj_test2\\obj_test2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e6f80b18-43dc-45a2-b8c8-feba8d81472b",
+            "Value": {
+                "id": "0aac8d27-968a-4f97-8399-29e2181d9b5d",
+                "resourcePath": "tilesets\\til_tileObj\\til_tileObj.yy",
+                "resourceType": "GMTileSet"
             }
         }
     ],
