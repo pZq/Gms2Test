@@ -19,4 +19,3 @@ if (mouse_check_button(mb_left) && (count < 1)) {
 
 count--;
 
-// add comment
