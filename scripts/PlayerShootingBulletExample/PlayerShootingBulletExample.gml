@@ -1,4 +1,10 @@
+/* create event */
+mx = x;
+my = y;
 
+count = 0;
+
+/* Step event */
 //Global Left Pressed event:
 
 if (mouse_check_button(mb_left) && (count < 1)) {
@@ -12,3 +18,4 @@ if (mouse_check_button(mb_left) && (count < 1)) {
 }
 
 count--;
+
