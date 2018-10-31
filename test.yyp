@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "58b5502c-a448-46af-92ad-f653c630d8ad",
+            "Value": {
+                "id": "00eae0f0-c577-4e55-945e-485e2f1f774d",
+                "resourcePath": "sprites\\spr_tile\\spr_tile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "53f65f21-fe17-4eb0-b0a2-eaa956a9db0e",
             "Value": {
                 "id": "4dae1459-37af-49a2-bf89-38ea9f29c772",
@@ -116,6 +124,14 @@
                 "id": "299c025c-d774-4c2a-8eb8-e93d15e24292",
                 "resourcePath": "fonts\\font0\\font0.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "7ef824a2-18cc-4cb3-a1c5-c57d29b88fe4",
+            "Value": {
+                "id": "b06e6bab-c97e-4812-a877-52f3f3d07205",
+                "resourcePath": "tilesets\\til_tile\\til_tile.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
