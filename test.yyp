@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "2a5f54ee-1c67-4dac-aa81-2aceffb5dcb1",
+            "Value": {
+                "id": "61cd3d63-9382-4403-911a-d58f8cfe35c0",
+                "resourcePath": "tilesets\\til_collission\\til_collission.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "4089fb65-98eb-45c9-9016-717257a2caef",
             "Value": {
                 "id": "136e0a35-3501-428d-b8e7-abecc699d2e6",
@@ -172,6 +180,14 @@
                 "id": "ff4c7607-5ffb-4fb8-bb7f-6b5675e7f5eb",
                 "resourcePath": "views\\b56451aa-4c5b-4408-bb39-1417ac7ca2a1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b9dd8347-717e-4aa7-8bd4-5ea194469f05",
+            "Value": {
+                "id": "71d54959-fc4a-487b-a4e3-92883d3137bf",
+                "resourcePath": "sprites\\spr_TileCollission\\spr_TileCollission.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
