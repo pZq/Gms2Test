@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "bc50fcd5-07cf-4ec5-b5ee-1484c5d7d22a",
+            "Value": {
+                "id": "b194f3a7-1e73-4ea6-b9aa-60d7a8bdb4de",
+                "resourcePath": "sprites\\spr_testiukko3\\spr_testiukko3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "beaca9f6-b62f-4105-af09-ff3309fee742",
             "Value": {
                 "id": "4470b001-9f3c-4832-b192-283ab302cf13",
