@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "42762980-7f8b-44ee-9c20-da92d3b723d2",
+            "Value": {
+                "id": "13d5a0f0-79be-4248-9f34-5a1a26b9d73a",
+                "resourcePath": "sprites\\spr_testiukko11walk\\spr_testiukko11walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "43d00275-c7e8-4bea-be27-618df765943c",
             "Value": {
                 "id": "029555ce-541f-4e76-aef0-993a52b5568e",
@@ -234,7 +242,7 @@
             "Key": "c3b6e0ea-e4ba-446b-af96-96b1b812f41a",
             "Value": {
                 "id": "09ffbba1-ed63-4514-a427-241e83811928",
-                "resourcePath": "sprites\\spr_testiukko1\\spr_testiukko1.yy",
+                "resourcePath": "sprites\\spr_testiukko1idle\\spr_testiukko1idle.yy",
                 "resourceType": "GMSprite"
             }
         },
