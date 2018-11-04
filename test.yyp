@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "261847f8-e723-4771-b90a-e0bcad17b612",
+            "Value": {
+                "id": "e8ff1723-5062-407b-b934-48019f6a7f9c",
+                "resourcePath": "objects\\obj_fox\\obj_fox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2a5f54ee-1c67-4dac-aa81-2aceffb5dcb1",
             "Value": {
                 "id": "61cd3d63-9382-4403-911a-d58f8cfe35c0",
@@ -66,7 +74,7 @@
             "Key": "35f0cdf1-1d81-447a-b50e-5290e1ce75dc",
             "Value": {
                 "id": "7f564e65-a46d-4af6-8fd0-fa001e6d0c31",
-                "resourcePath": "sprites\\sprite9\\sprite9.yy",
+                "resourcePath": "sprites\\spr_foxRun\\spr_foxRun.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -74,7 +82,7 @@
             "Key": "3e4344c4-2252-433f-bd46-76040df2abab",
             "Value": {
                 "id": "2671e39c-81ab-438a-baac-4e9fab8fbaf8",
-                "resourcePath": "sprites\\sprite10\\sprite10.yy",
+                "resourcePath": "sprites\\spr_foxJump\\spr_foxJump.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -282,7 +290,7 @@
             "Key": "d33d3b50-bd27-49f6-ab71-47ea0fc15492",
             "Value": {
                 "id": "229704d7-c6b4-444e-bd29-6519e8d5375f",
-                "resourcePath": "sprites\\sprite8\\sprite8.yy",
+                "resourcePath": "sprites\\spr_foxIdle\\spr_foxIdle.yy",
                 "resourceType": "GMSprite"
             }
         },
