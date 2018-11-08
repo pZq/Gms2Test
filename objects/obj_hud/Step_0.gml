@@ -5,7 +5,7 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
     {
 		switch (id) {
 			case global.BUTTON_INSTANCE1:
-			    image_index = 1;
+			    image_index = global.BUTTON_FOX_DOWN;
 				break;
 			case global.BUTTON_INSTANCE2:
 				image_index = 1;
@@ -17,5 +17,13 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
     }
 }
 if ( device_mouse_check_button_released( 0, mb_left ) ) {
-	obj_HudButton.image_index = 0;
+	// Put all button sprites to sprite number 0 of spr_ButtonSpawner
+	//obj_HudButton.image_index = 0;
+	
+	// Go into first occurance of obj_HudButton and make it to have fox sprite up selected
+	with (instance_find(obj_HudButton, 0)) {
+		image_index = global.BUTTON_FOX_UP;
+	}
+	
+	
 }
