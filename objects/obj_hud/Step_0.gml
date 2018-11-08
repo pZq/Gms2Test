@@ -9,6 +9,7 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 		switch (id) {
 			case global.BUTTON_INSTANCE1: // If first button was pressed
 			    image_index = global.BUTTON_FOX_DOWN; // Fox button down sprite image
+				instance_create_layer(x,250, "Instances", obj_fox)
 				break;
 			case global.BUTTON_INSTANCE2: // If second button was pressed
 				image_index = 1; // sprite image 1
