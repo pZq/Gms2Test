@@ -178,7 +178,7 @@
             "Key": "70d5f8ea-028c-424a-965b-d245b361307d",
             "Value": {
                 "id": "299c025c-d774-4c2a-8eb8-e93d15e24292",
-                "resourcePath": "fonts\\font0\\font0.yy",
+                "resourcePath": "fonts\\fnt_hud\\fnt_hud.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -204,6 +204,14 @@
                 "id": "f0099589-153a-489f-91c0-b681007a53b6",
                 "resourcePath": "views\\90b543f2-4779-4950-a4b2-69c0d5380fef.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9c7a7331-ffa5-439d-a2dc-7118ccfb534c",
+            "Value": {
+                "id": "727ab779-7f93-455f-a3a5-72c1b851a7ca",
+                "resourcePath": "objects\\obj_hud\\obj_hud.yy",
+                "resourceType": "GMObject"
             }
         },
         {
