@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "71b9761d-2301-4779-b745-f2ab30b32daf",
+            "Value": {
+                "id": "46224011-a7b4-49a8-9292-d0d1825bc888",
+                "resourcePath": "sprites\\spr_ButtonSpawner\\spr_ButtonSpawner.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7ef824a2-18cc-4cb3-a1c5-c57d29b88fe4",
             "Value": {
                 "id": "b06e6bab-c97e-4812-a877-52f3f3d07205",
@@ -316,6 +324,14 @@
                 "id": "09ffbba1-ed63-4514-a427-241e83811928",
                 "resourcePath": "sprites\\spr_testiukko1idle\\spr_testiukko1idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c57ca9a4-245b-443f-bd98-037c17bb3582",
+            "Value": {
+                "id": "aaa1c2f9-53f2-4c14-a9e5-be605a3ec6c8",
+                "resourcePath": "objects\\obj_HudButton\\obj_HudButton.yy",
+                "resourceType": "GMObject"
             }
         },
         {
