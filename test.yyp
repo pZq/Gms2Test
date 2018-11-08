@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "666e2362-743a-4131-b98e-ec3267fe749e",
+            "Value": {
+                "id": "2f1cbf6b-5a84-414a-8835-969f5f424ddf",
+                "resourcePath": "objects\\obj_MouseDragView\\obj_MouseDragView.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "66854768-29fe-4992-8b11-bc8d51a9176d",
             "Value": {
                 "id": "fe47cd22-202c-486d-bec7-6a4016bb225f",
