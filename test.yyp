@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "3c5bcaee-211b-4c80-8e18-004dab160ea0",
+            "Value": {
+                "id": "a8c564e0-6f4c-46e7-97a3-776a3649408e",
+                "resourcePath": "objects\\obj_oraalisuspensio\\obj_oraalisuspensio.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3e4344c4-2252-433f-bd46-76040df2abab",
             "Value": {
                 "id": "2671e39c-81ab-438a-baac-4e9fab8fbaf8",
