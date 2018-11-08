@@ -9,7 +9,8 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 		switch (id) {
 			case global.BUTTON_INSTANCE1: // If first button was pressed
 			    image_index = global.BUTTON_FOX_DOWN; // Fox button down sprite image
-				instance_create_layer(x,250, "Instances", obj_fox)
+				instance_create_layer(x,250, "Instances", obj_fox); // create fox object to instances layers
+				// REMEMBER TO KILL obj_fox instance at suitable positions -> when killed or similar....
 				break;
 			case global.BUTTON_INSTANCE2: // If second button was pressed
 				image_index = 1; // sprite image 1
@@ -23,6 +24,9 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 
 // if mouse released
 if ( device_mouse_check_button_released( 0, mb_left ) ) {
+	// Put all buttons to first sprite image i.e. Up state
+	obj_HudButton.image_index = 0;
+	
 	// Go into first occurance of obj_HudButton and make it to have fox sprite up selected
 	with (instance_find(obj_HudButton, 0)) {
 		image_index = global.BUTTON_FOX_UP; // add sprite image for fox button up state
