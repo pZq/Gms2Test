@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "975cb666-5502-405f-9e10-6748e04f7184",
+            "Value": {
+                "id": "cc7e33cd-18e6-4cb9-b807-6e68f56d259a",
+                "resourcePath": "objects\\obj_enemySkeleton\\obj_enemySkeleton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a8a9a0a7-2875-4e81-85aa-d0da2cd00bd8",
             "Value": {
                 "id": "d9e164ab-a984-47e2-88ea-c7645e561d96",
