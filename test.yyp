@@ -207,14 +207,6 @@
             }
         },
         {
-            "Key": "70d5f8ea-028c-424a-965b-d245b361307d",
-            "Value": {
-                "id": "299c025c-d774-4c2a-8eb8-e93d15e24292",
-                "resourcePath": "fonts\\font0\\font0.yy",
-                "resourceType": "GMFont"
-            }
-        },
-        {
             "Key": "7ef824a2-18cc-4cb3-a1c5-c57d29b88fe4",
             "Value": {
                 "id": "b06e6bab-c97e-4812-a877-52f3f3d07205",
@@ -239,11 +231,27 @@
             }
         },
         {
+            "Key": "a8a9a0a7-2875-4e81-85aa-d0da2cd00bd8",
+            "Value": {
+                "id": "d9e164ab-a984-47e2-88ea-c7645e561d96",
+                "resourcePath": "objects\\obj_hud\\obj_hud.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a8f9e860-3911-4fb8-bfc6-495b786c6c40",
             "Value": {
                 "id": "38c80292-4e51-4713-a807-5b81bb12e991",
                 "resourcePath": "views\\a8f9e860-3911-4fb8-bfc6-495b786c6c40.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b08ca428-80a0-4f80-84f7-3845069951b1",
+            "Value": {
+                "id": "7041ffdf-794c-401f-a453-6becbecfc644",
+                "resourcePath": "fonts\\fnt_hud\\fnt_hud.yy",
+                "resourceType": "GMFont"
             }
         },
         {
