@@ -2,14 +2,14 @@
     "id": "c3b6e0ea-e4ba-446b-af96-96b1b812f41a",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_testiukko1",
+    "name": "spr_testiukko1idle",
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 50,
+    "bbox_bottom": 45,
     "bbox_left": 26,
-    "bbox_right": 44,
-    "bbox_top": 15,
+    "bbox_right": 42,
+    "bbox_top": 19,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
@@ -34,6 +34,20 @@
                     "mvc": "1.0",
                     "FrameId": "71c37789-0da4-43c7-86f8-6eb925c5f972",
                     "LayerId": "33e35abd-5acc-4863-ac2e-0b2dd9805456"
+                },
+                {
+                    "id": "88e918f0-7a38-48f3-9010-fa9fcefeeece",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "71c37789-0da4-43c7-86f8-6eb925c5f972",
+                    "LayerId": "7e40541a-39dc-40d1-823e-63adbf3c7fa5"
+                },
+                {
+                    "id": "c715b6a8-4dde-4e18-8379-64f507a0b8dd",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "71c37789-0da4-43c7-86f8-6eb925c5f972",
+                    "LayerId": "a7a135fc-125a-4f42-8f71-1d5fa4a4dd8b"
                 }
             ]
         }
@@ -43,13 +57,35 @@
     "height": 64,
     "layers": [
         {
+            "id": "a7a135fc-125a-4f42-8f71-1d5fa4a4dd8b",
+            "modelName": "GMImageLayer",
+            "mvc": "1.0",
+            "SpriteId": "c3b6e0ea-e4ba-446b-af96-96b1b812f41a",
+            "blendMode": 0,
+            "isLocked": false,
+            "name": "weapon&shield",
+            "opacity": 100,
+            "visible": true
+        },
+        {
+            "id": "7e40541a-39dc-40d1-823e-63adbf3c7fa5",
+            "modelName": "GMImageLayer",
+            "mvc": "1.0",
+            "SpriteId": "c3b6e0ea-e4ba-446b-af96-96b1b812f41a",
+            "blendMode": 0,
+            "isLocked": false,
+            "name": "armor",
+            "opacity": 100,
+            "visible": true
+        },
+        {
             "id": "33e35abd-5acc-4863-ac2e-0b2dd9805456",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "c3b6e0ea-e4ba-446b-af96-96b1b812f41a",
             "blendMode": 0,
             "isLocked": false,
-            "name": "default",
+            "name": "ukko",
             "opacity": 100,
             "visible": true
         }
