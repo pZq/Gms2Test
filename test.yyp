@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "3c5bcaee-211b-4c80-8e18-004dab160ea0",
-            "Value": {
-                "id": "a8c564e0-6f4c-46e7-97a3-776a3649408e",
-                "resourcePath": "objects\\obj_oraalisuspensio\\obj_oraalisuspensio.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "3e4344c4-2252-433f-bd46-76040df2abab",
             "Value": {
                 "id": "2671e39c-81ab-438a-baac-4e9fab8fbaf8",
@@ -228,14 +220,6 @@
                 "id": "ecbc2e2c-372c-4698-be9b-ecb5f5a7ddb2",
                 "resourcePath": "scripts\\PlayerShootingBulletExample\\PlayerShootingBulletExample.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "891856d6-a7ec-4dce-8d3f-27f91e85405f",
-            "Value": {
-                "id": "c079f296-0154-4aa0-9854-834f5f4d216a",
-                "resourcePath": "sprites\\sprite16\\sprite16.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
