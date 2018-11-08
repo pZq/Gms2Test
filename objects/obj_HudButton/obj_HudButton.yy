@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_HudButton",
     "eventList": [
-        
+        {
+            "id": "646f7001-ce65-486e-b3fe-0343a539433b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "c57ca9a4-245b-443f-bd98-037c17bb3582"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
