@@ -6,7 +6,7 @@
 // basic player info
 move_speed = 8;
 jump_impulse= 21;
-grav = 0.75;
+grav = 0.5;
 v_speed = 0;
 
 //tile map info

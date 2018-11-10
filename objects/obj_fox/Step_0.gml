@@ -9,10 +9,14 @@ if (dy > 0)
 	var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom) & tile_index_mask;
 	var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom) & tile_index_mask;
 	
+	// When sprite bounding box hits the collision tile
 	if (t1 != 0 || t2 != 0)
 	{
-	y = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
-	v_speed = 0;
+		y = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		v_speed = 0;
+		
+		// when fox hits groudn -> start moving towards right of the room.
+		move_towards_point(x+1, y, 1);
 	}
 }
 else {//upwards
