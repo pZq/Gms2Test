@@ -1,5 +1,7 @@
 // scripti saatu täältä https://www.youtube.com/watch?time_continue=487&v=7NHJ6A34V6I
 //scripti toimii nyt ilman physiikkaa. eli otin sen pois roomin asetuksista
+// tähän voisi vielä lisätä hyppykoodin mutta sitä en vielä laittanut
+
 
 // basic player info
 move_speed = 8;
