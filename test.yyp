@@ -421,6 +421,14 @@
                 "resourcePath": "sprites\\spr_skeletonAttack\\spr_skeletonAttack.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "fee86ac4-b40b-49c6-bdfd-af1719091308",
+            "Value": {
+                "id": "4fabcdc3-b157-49bf-9549-91102f39be7c",
+                "resourcePath": "sprites\\spr_grass\\spr_grass.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
