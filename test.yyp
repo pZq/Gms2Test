@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "2cf6fe07-c694-4432-9cc6-7ed117f46e5e",
+            "Value": {
+                "id": "32eec158-767b-4a72-8011-ff1f6d44f81d",
+                "resourcePath": "scripts\\MotionBlur\\MotionBlur.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3266a45b-065c-42ab-9138-b6b4a0282e69",
             "Value": {
                 "id": "3d986744-d786-44ef-bb69-5322e3d1efce",
@@ -327,6 +335,14 @@
             }
         },
         {
+            "Key": "be1a437d-4d31-45d7-afac-97b7cba62c3c",
+            "Value": {
+                "id": "5a0a63ad-0a43-4ef6-8627-f6ef051f3446",
+                "resourcePath": "scripts\\ShakeScreen\\ShakeScreen.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "beaca9f6-b62f-4105-af09-ff3309fee742",
             "Value": {
                 "id": "4470b001-9f3c-4832-b192-283ab302cf13",
@@ -434,7 +450,9 @@
     "script_order": [
         "cf7d61d4-68f4-4015-a945-83313ce6134d",
         "883c682e-5e0e-42db-af49-e5c86baa2a69",
-        "288564b7-80c9-48e2-8702-42eef796c758"
+        "288564b7-80c9-48e2-8702-42eef796c758",
+        "2cf6fe07-c694-4432-9cc6-7ed117f46e5e",
+        "be1a437d-4d31-45d7-afac-97b7cba62c3c"
     ],
     "tutorial": ""
 }
