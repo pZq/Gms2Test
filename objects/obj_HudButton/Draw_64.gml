@@ -18,7 +18,8 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 				break;
 			case global.BUTTON_INSTANCE2: // If second button was pressed
 				image_index = 1; // sprite image 1
-				script_execute(ShakeScreen,1,5);
+				COUNT = 0;
+				alarm[0] = 1;
 				break;
 			case global.BUTTON_INSTANCE3: // If third button was pressed
 				image_index = 1; // sprite image 1
