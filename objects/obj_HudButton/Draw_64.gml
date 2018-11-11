@@ -18,7 +18,9 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 				break;
 			case global.BUTTON_INSTANCE2: // If second button was pressed
 				image_index = 1; // sprite image 1
-				COUNT = 0;
+				COUNT = 0;	
+				CurrentCameraX = camera_get_view_x(view_camera[0]);
+				CurrentCameraY = camera_get_view_y(view_camera[0]);
 				alarm[0] = 1;
 				break;
 			case global.BUTTON_INSTANCE3: // If third button was pressed
