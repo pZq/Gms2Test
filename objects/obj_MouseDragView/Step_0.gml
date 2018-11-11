@@ -13,4 +13,10 @@ camera_set_view_pos(view_camera[0],
 camera_set_view_pos(view_camera[0],
 						max(0, min(camera_get_view_x(view_camera[0]), room_width - camera_get_view_width(view_camera[0]))),
 						max(0, min(camera_get_view_y(view_camera[0]), room_height - camera_get_view_height(view_camera[0]))));
+						
+// Move the mountains when viewport changes. The second commented line is for eg. the foreground.
+var _cam_x = camera_get_view_x(view_camera[0]) ;
+layer_x("BackgroundsMountains", _cam_x * 0.10); // Change the background layer name to whatever you use in the room editor
+//layer_x("parallax_background_2", _cam_x * 0.5);   // Change the 0.25 and 0.5 values to change the speed of the effect
+
 }

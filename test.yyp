@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "3266a45b-065c-42ab-9138-b6b4a0282e69",
+            "Value": {
+                "id": "3d986744-d786-44ef-bb69-5322e3d1efce",
+                "resourcePath": "sprites\\spr_mountains\\spr_mountains.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "350fa5ad-2ec7-4cec-9f09-1ee92f6660fe",
             "Value": {
                 "id": "0cc1192a-5f7b-4a27-8b65-f96971187e3a",
