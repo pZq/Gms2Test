@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "20ce702c-6cd9-442d-b887-accd8be999d9",
+            "Value": {
+                "id": "e1992464-b380-4973-857e-2aedd38d99be",
+                "resourcePath": "scripts\\array_add\\array_add.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "257f1815-76ab-4e45-9922-5603fdfe0195",
             "Value": {
                 "id": "64663482-0404-4b1d-9621-5b45373050ec",
@@ -447,6 +455,14 @@
             }
         },
         {
+            "Key": "f0b30450-31d9-4945-9b3d-13a1f165554e",
+            "Value": {
+                "id": "9e3e08dd-3e7c-49b3-badc-d5e828586f03",
+                "resourcePath": "objects\\obj_HudButtonScript\\obj_HudButtonScript.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fee86ac4-b40b-49c6-bdfd-af1719091308",
             "Value": {
                 "id": "4fabcdc3-b157-49bf-9549-91102f39be7c",
@@ -461,7 +477,8 @@
         "288564b7-80c9-48e2-8702-42eef796c758",
         "2cf6fe07-c694-4432-9cc6-7ed117f46e5e",
         "be1a437d-4d31-45d7-afac-97b7cba62c3c",
-        "17adeb0b-99e2-4c32-a44c-3fc537b827e8"
+        "17adeb0b-99e2-4c32-a44c-3fc537b827e8",
+        "20ce702c-6cd9-442d-b887-accd8be999d9"
     ],
     "tutorial": ""
 }
