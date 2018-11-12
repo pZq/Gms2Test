@@ -12,8 +12,10 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 		switch (id) {
 			case global.BUTTON_INSTANCE1: // If first button was pressed
 			    image_index = global.BUTTON_FOX_DOWN; // Fox button down sprite image
-				instance_create_layer(x,250, "Instances", obj_fox); // create fox object to instances layers
-				
+				CreatedInstanceID = instance_create_layer(x,250, "Instances", obj_fox); // create fox object to instances layers
+				variable_instance_set(CreatedInstanceID, "hp", irandom_range(0, 100));
+				//variable_instance_set(CreatedInstanceID, "max_hp", 100);
+				//obj_fox.hp = irandom_range(0, 100);
 				// REMEMBER TO KILL obj_fox instance at suitable positions -> when killed or similar....
 				break;
 			case global.BUTTON_INSTANCE2: // If second button was pressed
