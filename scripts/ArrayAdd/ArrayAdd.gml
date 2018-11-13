@@ -1,4 +1,4 @@
-/// @function array_add(array,value,...)
+/// @function ArrayAdd(array,value,...)
 /// @description Returns the given array with elements appended to it. If an array is not given, the given value is returned.
 /// @param {array} array to be appended
 /// @param {real} value to be appended to array 
