@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "09e8b896-6b85-4aa1-9c4d-a5a771ed56f9",
+            "Value": {
+                "id": "162029eb-b21d-4b45-9e4e-24f01cd1b18d",
+                "resourcePath": "views\\09e8b896-6b85-4aa1-9c4d-a5a771ed56f9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0bec67c5-8d86-4d69-8678-590a238236eb",
             "Value": {
                 "id": "95d55394-8ddc-4cd6-81c7-927c0b9ccb8c",
@@ -231,6 +239,14 @@
             }
         },
         {
+            "Key": "4f995c0f-4e45-4587-a9b6-6d5430d40e96",
+            "Value": {
+                "id": "58c01498-2dd9-43c8-812a-1bd8a8258d20",
+                "resourcePath": "views\\4f995c0f-4e45-4587-a9b6-6d5430d40e96.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "534d126a-2234-4506-8a5e-87b25e29db7a",
             "Value": {
                 "id": "4361f53a-3121-42c9-8418-8e493646e512",
@@ -331,6 +347,14 @@
             "Value": {
                 "id": "750f8d21-84d7-403f-a770-8cf9e2345ac8",
                 "resourcePath": "views\\98900048-b1a1-4c8e-906e-7d951f9795cc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "99dc5603-72ab-4677-b03c-0a0d51160a95",
+            "Value": {
+                "id": "b792399d-c82e-4bc8-8be1-3b2f18adf964",
+                "resourcePath": "views\\99dc5603-72ab-4677-b03c-0a0d51160a95.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -479,6 +503,14 @@
             }
         },
         {
+            "Key": "df9b1eee-91da-4e4c-81c7-a35f99849b33",
+            "Value": {
+                "id": "210102c3-f389-42b9-97d4-0cdea9ead28a",
+                "resourcePath": "views\\df9b1eee-91da-4e4c-81c7-a35f99849b33.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "e6f80b18-43dc-45a2-b8c8-feba8d81472b",
             "Value": {
                 "id": "0aac8d27-968a-4f97-8399-29e2181d9b5d",
@@ -500,6 +532,14 @@
                 "id": "9e3e08dd-3e7c-49b3-badc-d5e828586f03",
                 "resourcePath": "objects\\obj_HudButtonScript\\obj_HudButtonScript.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fdcda90d-15ab-465f-8aae-e5e9e7ef4b10",
+            "Value": {
+                "id": "f6b41239-c5f2-4cf3-94ba-a1846edaca83",
+                "resourcePath": "views\\fdcda90d-15ab-465f-8aae-e5e9e7ef4b10.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
