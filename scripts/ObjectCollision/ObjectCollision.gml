@@ -1,3 +1,15 @@
+/// @function ObjectCollision(move_speed,v_speed,grav,tilemap,sprite_bbox_bottom,sprite_bbox_top,sprite_bbox_right,sprite_bbox_left)
+/// @description Adds gravity to the object from where this script is called. Also gives X axis a constant movement
+/// @param {real} move_speed keyboard move speed
+/// @param {real} v_speed 
+/// @param {real} grav gravitation for the current object
+/// @param {real} tilemap what tilemap to use
+/// @param {real} sprite_bbox_bottom Boudning box related
+/// @param {real} sprite_bbox_top Boudning box related
+/// @param {real} sprite_bbox_right Boudning box related
+/// @param {real} sprite_bbox_left Boudning box related
+
+
 move_speed = argument0;
 v_speed = argument1;
 grav = argument2;
