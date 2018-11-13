@@ -1,5 +1,5 @@
 if (COUNT <= 10) {
-script_execute(ShakeScreen,1,5);
+ShakeScreen(1,5);
 COUNT++;
 alarm[0] = 3;
 } 

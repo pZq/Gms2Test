@@ -20,7 +20,7 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 				COUNT = 0;	
 				CurrentCameraX = camera_get_view_x(view_camera[0]);
 				CurrentCameraY = camera_get_view_y(view_camera[0]);
-				alarm[0] = 1;
+				alarm[0] = 1; // this alarm executes the obj_HudButton alarm and not this obj_HudButtonScript alarm.
 				
 				// This for statement gets all create obj_fox instances, and reduces the individual instance 
 				// HP with eg -10 

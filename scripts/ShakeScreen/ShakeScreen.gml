@@ -1,4 +1,4 @@
-/// @desc screenshake_add(min,max)
+/// @function ShakeScreen(min,max)
 /// @param min Represents the number of pixels the screenshake may move at the least
 /// @param max Represents the number of pixels the screenshake may move at most
 
