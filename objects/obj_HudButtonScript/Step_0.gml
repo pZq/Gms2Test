@@ -29,6 +29,10 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 					if (variable_instance_exists(ObjInstance, "hp")) { // if current instance has the hp variable, lets reduce the value by 10
 						CurrentHP = variable_instance_get(ObjInstance, "hp")
 						variable_instance_set(ObjInstance, "hp", CurrentHP-10);
+						if ((CurrentHP-10) <= 0) {
+							ObjInstance.speed = 0;
+							move_towards_point(x, y, 0);
+						}
 					}
 				}
 				
