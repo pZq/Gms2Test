@@ -13,6 +13,7 @@ sprite_bbox_left = argument7;
 
 */
 ObjectCollision(move_speed, v_speed, grav, tilemap, sprite_bbox_bottom, sprite_bbox_top, sprite_bbox_right, sprite_bbox_left);
+
 if (GroundCollision) {
 	// when fox hits groudn -> start moving towards right of the room.
 	move_towards_point(x+1, y, 1);
@@ -21,7 +22,7 @@ if (GroundCollision) {
 }
 
 // if soldier dies -> play sound, play death animation...
-if (hp<=0 && SoldierDies==false) { // this if  means -> if healthpoints below or equal 0 -> stop object instance movement
+if ((hp <= 0) && !SoldierDies) { // this if  means -> if healthpoints below or equal 0 -> stop object instance movement
 	SoldierDies=true;
 	speed=0;
 	image_speed = 0;
@@ -29,7 +30,7 @@ if (hp<=0 && SoldierDies==false) { // this if  means -> if healthpoints below or
 	snd = audio_play_sound(snd_explosion,0,false);
 	audio_sound_set_track_position(snd, 0.5);
 		
-	sprite_index = spr_testiukko1death;
+	//sprite_index = spr_testiukko1death;
 	image_speed = 1;
 	if (image_speed > 0)
 	{
