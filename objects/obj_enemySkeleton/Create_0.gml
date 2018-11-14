@@ -26,4 +26,4 @@ pc=0;
 hp=50;
 max_hp=100;
 
-move_towards_point(x+1, y, 1);
+//move_towards_point(x-1, y, 0);

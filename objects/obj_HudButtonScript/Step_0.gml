@@ -35,6 +35,8 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 				break;
 			case global.BUTTON_INSTANCE3: // If third button was pressed
 				image_index = 1; // sprite image 1
+				CreatedInstanceID = instance_create_layer(300,250, "Instances", obj_enemySkeleton);
+				variable_instance_set(CreatedInstanceID, "hp", 100);
 				break;
 		}
     }
