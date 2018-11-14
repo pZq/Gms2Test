@@ -36,8 +36,8 @@ if (dy > 0)
 		y = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 		v_speed = 0;
 		
-		// when fox hits groudn -> start moving towards right of the room.
-		move_towards_point(x+1, y, 1);
+		// set a flag to true on ground collision detected. Used eg in obj_fox step event
+		GroundCollision = true;
 	}
 }
 else {//upwards

@@ -8,6 +8,8 @@ move_speed = 8;
 jump_impulse= 21;
 grav = 0.5;
 v_speed = 0;
+GroundCollision=false;
+SoldierDies=false;
 
 //tile map info
 
