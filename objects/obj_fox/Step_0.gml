@@ -20,7 +20,7 @@ if (hp <= 0 && !SoldierDies) { // this if  means -> if healthpoints below or equ
 	speed=0;
 	image_speed = 0;
 	
-	snd = audio_play_sound(snd_maleDeath,0,false);
+	snd = audio_play_sound(snd_maleDeath2,0,false);
 	audio_sound_set_track_position(snd, 0.5);
 		
 	sprite_index = spr_testiukko1death;
