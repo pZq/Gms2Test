@@ -1,7 +1,7 @@
 // Draw self = draf obj_fox
 draw_self();
-dx = x+55;
-dy = y+30;
+dx = x;
+dy = y-10;
 // this draws the health bar
 pc = (hp / max_hp) * 100;
 
