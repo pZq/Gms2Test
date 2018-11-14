@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "6b8cbf57-6569-45df-9065-a328e738a2a6",
+            "Value": {
+                "id": "68bcf6d0-a1fb-4f4c-8d95-6e8670af1089",
+                "resourcePath": "sprites\\spr_testiukko1death\\spr_testiukko1death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6eac3d2a-9b58-48c6-b120-358aa233fc4a",
             "Value": {
                 "id": "70aa7d59-87db-45e6-9ae6-57802705823a",
