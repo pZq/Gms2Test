@@ -25,3 +25,5 @@ sprite_bbox_top = sprite_get_bbox_top(sprite_index) - sprite_get_yoffset(sprite_
 pc=0;
 hp=50;
 max_hp=100;
+
+move_towards_point(x+1, y, 1);
