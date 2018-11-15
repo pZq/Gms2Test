@@ -11,12 +11,34 @@ v_speed = 0;
 GroundCollision=false;
 CharacterDies=false;
 
+/*
+Using the hurtbox_create script we just made, we are able to set the scale and 
+offset really easily, and store the ID of the oHurtbox object in a variable that the oPlayer object can use. 
+The numbers used in the script are measured in pixels. 
+The hurtbox we are creating is 18 pixels wide, 24 pixels tall, offset 9 pixels to the left of 
+the player sprite, and offset 24 pixels above the player sprite. 
+If you run the game now, you will notice that your hurtbox isn’t following your character around, 
+so let's fix that before moving on. Open the end step event in your oPlayer object and add the following code. 
+If you are following along from previous entries in this series, 
+I added mine right below the animation code.
+*/
+//hurtbox
+hurtbox = HurtboxCreate(18,24,55,55);
+
+//hitbox
+hitbox = -1;
+
+// Object starts with frame 0. Variable used in hurtbox/hitbox code
+frameSpeed = 1;
+frame = 0;
+
 //tile map info
 
 var l = layer_get_id("collission") ;
 tilemap = layer_tilemap_get_id(l) ;
 
 //sprite info
+sprite = sprite_index;
 sprite_bbox_left = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_index);
 sprite_bbox_right = sprite_get_bbox_right(sprite_index) - sprite_get_xoffset(sprite_index);
 sprite_bbox_bottom = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(sprite_index);
@@ -26,4 +48,8 @@ pc=0;
 hp=50;
 max_hp=100;
 
+// move to right
 move_towards_point(x+1, y, 1);
+facing=1;
+
+
