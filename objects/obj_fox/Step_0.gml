@@ -40,30 +40,31 @@ if (image_speed > 0 && CharacterDies)
 
 // Start counting frames
 FrameCounter();
-for (i=array_length_1d(global.InstanceArray);i>=0;i--) {
-	ObjInstance = instance_find(obj_fox, i);
+//for (i=array_length_1d(global.InstanceArray);i>=0;i--) {
+	//ObjInstance = instance_find(obj_fox, i);
+	ObjInstance = obj_fox;
 	with (ObjInstance) {
-		for (i=array_length_1d(global.InstanceSkeletonArray);i>=0;i--) {
-			skeleInstance = instance_find(obj_enemySkeleton, i);
-			if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x) && frame < 30) {
-						speed = 0;
-						image_speed = 0;
-						AttackState();
-						if (frame == 29) {
-							with (skeleInstance)
-								hp += -20;
-						}
+		skeleInstance = instance_nearest(x, y, obj_enemySkeleton);
+		if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x) && frame < 30) {
+			speed = 0;
+			image_speed = 0;
+			AttackState();
+			if (frame == 29) {
+				with (skeleInstance){
+					hp += -20;
+					if (hp<=0) {
+						other.speed = 1;
+						other.image_speed = 1;
+					}
+					
+				}
 			}
 		}
 	}
-}
+//}
 
 //for (i=array_length_1d(global.InstanceSkeletonArray);i>=0;i--) {
 	
-	if (instance_exists(skeleInstance) && skeleInstance.hp <= 0) {
-				speed = 1;
-				image_speed = 1;
-				//instance_destroy(obj_enemySkeleton);
-	} 
+	
 //}
 
