@@ -9,6 +9,7 @@
 /// @param {real} hitStun How long "enemy" will be stunned after hit
 
 _hitbox = instance_create_layer(x, y, "instances", obj_hitbox);
+global.InstanceHitboxArray = ArrayAdd(global.InstanceHitboxArray, _hitbox);
 _hitbox.owner = id;
 _hitbox.image_xscale = argument0;
 _hitbox.image_yscale = argument1;

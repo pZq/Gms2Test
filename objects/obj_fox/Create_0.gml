@@ -56,4 +56,5 @@ max_hp=100;
 move_towards_point(x+1, y, 1);
 facing=1;
 
+global.InstanceHitboxArray[0] = pointer_null;
 
