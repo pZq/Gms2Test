@@ -22,5 +22,5 @@ Same thing with life. The longer the hitbox is active, the stronger it is. Giant
 are always very strong in fighting and action games. Keep this in mind when designing your attacks!
 */
 if(frame == 2 && hitbox == -1){
-    hitbox = HitboxCreate(33 * facing,24,55 * facing,55,8,3 * facing,45);
+    hitbox = HitboxCreate(33 * facing,24,-9 * facing,0,8,3 * facing,45);
 }
