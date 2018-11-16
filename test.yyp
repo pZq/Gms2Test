@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "5bf745a2-884d-46b3-bf26-9565bc71cbb2",
+            "Value": {
+                "id": "9806cd76-c296-4aff-b5d9-2886b1359e02",
+                "resourcePath": "sprites\\spr_testiukko1hit\\spr_testiukko1hit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6455bef3-7455-40d4-b5c4-1b0773107615",
             "Value": {
                 "id": "e08eddf9-22bc-4fd1-9356-d6fa16f032b3",
