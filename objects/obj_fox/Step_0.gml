@@ -41,6 +41,7 @@ if (image_speed > 0 && CharacterDies)
 // Start counting frames
 //FrameCounter();
 
+alarm[0] = -1;
 
 for (i=array_length_1d(global.InstanceArray);i>=0;i--) {
 	ObjInstance = instance_find(obj_fox, i);
@@ -49,12 +50,15 @@ for (i=array_length_1d(global.InstanceArray);i>=0;i--) {
 			FrameCounter();
 			speed = 0;
 			image_speed = 0;
+			
+			/*
 			if (frame<30) {
 				//show_message(string(frame));
 				AttackState();
 			}
 			if(frame>60)
 				frame=0;
+			*/
 			
 		}
 		
