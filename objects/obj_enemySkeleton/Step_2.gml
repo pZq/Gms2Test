@@ -10,7 +10,7 @@ if(hit){
     facing = hitBy.owner.facing * -1;
     hit = false;
     currentState = states.hit;
-	show_message("osuma_saatana");
+
 }
 
 //hitbox
