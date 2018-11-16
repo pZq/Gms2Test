@@ -52,8 +52,11 @@ if (instance_exists(obj_enemySkeleton)) {
 for (i=array_length_1d(global.InstanceArray);i>=0;i--) {
 	ObjInstance = instance_find(obj_fox, i);
 	with (ObjInstance) {
-		if (instance_exists(obj_enemySkeleton) && x >= (obj_enemySkeleton.x-20) && x <= (obj_enemySkeleton.x))
+		if (instance_exists(obj_enemySkeleton) && x >= (obj_enemySkeleton.x-20) && x <= (obj_enemySkeleton.x)) {
+			speed = 0;
+			imgaer_speed = 0;
 			AttackState();
+		}
 	}
 	
 }
