@@ -32,6 +32,10 @@ hitbox = -1;
 frameSpeed = 1;
 frame = 0;
 
+//states (states for player actions like -> attack, jump etc)
+currentState = 0; // käytetään esim HitState() skripti funktiossa
+lastState = 0; // en tiiä mihin tätä käytetää.
+
 //tile map info
 
 var l = layer_get_id("collission") ;
