@@ -15,6 +15,6 @@ if(frame > sprite_get_number(sprite) - 1){
 }
 
 //create hitbox on the right frame
-if(frame == 3 && hitbox == -1){
+if(frame == 2 && hitbox == -1){
     hitbox = HitboxCreate(20 * facing,12,-3 * facing,-16,8,3 * facing,45);
 }
