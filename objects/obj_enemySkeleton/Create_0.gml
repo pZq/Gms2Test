@@ -23,7 +23,7 @@ If you are following along from previous entries in this series,
 I added mine right below the animation code.
 */
 //hurtbox
-hurtbox = HurtboxCreate(18,24,-20,0);
+hurtbox = HurtboxCreate(18,24,-6,-10);
 
 //hitbox
 hitbox = -1;
