@@ -61,7 +61,7 @@ if(hitbox != -1){
 }
 
 //animation 
-FrameReset(); 
+//FrameReset(); 
 
 
 

@@ -1,10 +1,12 @@
 /// @function AttackState()
 
+/*
 xSpeed = 0;
 
 if(frame > sprite_get_number(sprite) - 1){
     currentState = states.normal;
 }
+*/
 
 //create hitbox on the right frame (frame calculated in FrameCounter function)
 // Facing should be 1 or -1 depending is the object walking to right or left
@@ -21,6 +23,9 @@ A quick word on hitbox play balancing. The larger the hitbox, the more powerful 
 Same thing with life. The longer the hitbox is active, the stronger it is. Giant, lingering hitboxes 
 are always very strong in fighting and action games. Keep this in mind when designing your attacks!
 */
+/*
 if(frame == 2 && hitbox == -1){
     hitbox = HitboxCreate(33 * facing,24,-9 * facing,0,8,3 * facing,45);
 }
+*/
+hitbox = HitboxCreate(33 * facing,24,-9 * facing,0,8,3 * facing,45);
