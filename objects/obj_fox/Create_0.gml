@@ -58,3 +58,5 @@ facing=1;
 
 global.InstanceHitboxArray[0] = pointer_null;
 
+
+

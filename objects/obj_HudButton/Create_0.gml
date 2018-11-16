@@ -5,6 +5,7 @@ global.BUTTON_INSTANCE3 = instance_find(obj_HudButton,2)
 
 // define array for gathering health info of each created game_object
 global.InstanceArray[0] = pointer_null;
+global.InstanceSkeletonArray[0] = pointer_null;
 
 // stop sprite animation
 image_speed=0;
