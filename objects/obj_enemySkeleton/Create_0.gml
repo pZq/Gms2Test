@@ -64,3 +64,5 @@ max_hp=100;
 facing=-1;
 image_xscale = facing;
 //move_towards_point(x-1, y, 0);
+HitTriggerCount = 0;
+HitTrigger = false;

@@ -58,5 +58,9 @@ facing=1;
 
 global.InstanceHitboxArray[0] = pointer_null;
 
+// put created object into variable
+ObjInstance = obj_fox;
+counter = 0;
+
 
 

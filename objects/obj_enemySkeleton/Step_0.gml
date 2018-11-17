@@ -61,12 +61,4 @@ if(frame == 2 && hitbox == -1){
     hitbox = HitboxCreate(33 * facing,24,55 * facing,55,8,3 * facing,45);
 }
 
-/*
-
-*/
-//state switch
-switch currentState {
-    case states.hit:
-        HitState();
-    break;
-}
+					

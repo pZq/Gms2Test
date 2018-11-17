@@ -5,12 +5,11 @@ with(hurtbox){
 
 //get hit
 if(hit){
-    xSpeed = hitBy.xHit;
+	xSpeed = hitBy.xHit;
     hitStun = hitBy.hitStun;
     facing = hitBy.owner.facing * -1;
     hit = false;
     currentState = states.hit;
-
 }
 
 //hitbox

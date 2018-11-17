@@ -27,6 +27,7 @@ that is running all of this code, but instead the object that is one layer above
 (the oHitbox object).
 */
 //hitbox
+/*
 if(hitbox != -1){
     with(hitbox){
         x = other.x + xOffset;
@@ -59,6 +60,7 @@ if(hitbox != -1){
         }
     }
 }
+*/
 
 //animation 
 //FrameReset(); 
