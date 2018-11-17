@@ -16,6 +16,24 @@ with(hurtbox){
     y = other.y + yOffset;
 }
 
+//get hit
+if(hit){
+	xSpeed = hitBy.xHit;
+    hitStun = hitBy.hitStun;
+    facing = hitBy.owner.facing * -1;
+    hit = false;
+    currentState = states.hit;
+	//show_debug_message("hurtbox owner "+string(hurtbox.owner));
+	//show_debug_message("hitby owner "+string(hitBy.owner));
+	hp+= -33; // joka osumalla helaa miinuksen verran
+	if (hp <= 0) {
+		instance_destroy(hurtbox);
+		//hitBy.owner.speed=1;
+		//hitBy.owner.image_speed=1;
+		alarm[0]=room_speed*3;
+	}
+}
+
 /*
 Quick recap of what's happening here. We check to see if we actually have a hitbox at the time, 
 and if so, we then check all hurtbox objects to see if any of them are colliding with this particular 

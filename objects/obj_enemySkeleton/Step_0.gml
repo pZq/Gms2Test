@@ -43,6 +43,15 @@ are always very strong in fighting and action games. Keep this in mind when desi
 
 //create hitbox on the right frame (frame calculated in FrameCounter function)
 // Facing should be 1 or -1 depending is the object walking to right or left
+/*
+soldierInst = instance_nearest(x,y,obj_fox);
+if (instance_exists(soldierInst) && x >= (soldierInst.x+20) && x <= (soldierInst.x) && frame < 30) {
+    
+
+}
+*/
+if (frame == 29 && !CharacterDies)
+		AttackState();
 
 /*
 if(frame == 2 && hitbox == -1){
@@ -50,5 +59,6 @@ if(frame == 2 && hitbox == -1){
     hitbox = HitboxCreate(33 * facing,24,55 * facing,55,8,3 * facing,45);
 }
 */
+
 
 					

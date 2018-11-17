@@ -32,6 +32,15 @@ hitbox = -1;
 frameSpeed = 1;
 frame = 0;
 
+/*
+Hit is a simple boolean we will use when applying hit effects. 
+Next, hitStun is how long the enemy will remain in hitStun after being hit. 
+Finally, hitBy will be the ID of the object that hit them.
+*/
+hit = false;
+hitStun = 0;
+hitBy = -1;
+
 //states (states for player actions like -> attack, jump etc)
 currentState = 0; // käytetään esim HitState() skripti funktiossa
 lastState = 0; // en tiiä mihin tätä käytetää.
@@ -54,7 +63,6 @@ max_hp=100;
 
 // move to right
 move_towards_point(x+1, y, 1);
-facing=1;
 
 global.InstanceHitboxArray[0] = pointer_null;
 
@@ -62,5 +70,5 @@ global.InstanceHitboxArray[0] = pointer_null;
 ObjInstance = obj_fox;
 counter = 0;
 
-
-
+facing=1;
+image_xscale = facing;
