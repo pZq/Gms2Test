@@ -26,21 +26,23 @@ if (image_speed > 0 && CharacterDies)
 
 if (hp>0) {
 	skeleInstance = instance_nearest(x,y,obj_enemySkeleton);
-	if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x+20) && frame < 30) {
+	//if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x+20) && frame < 30) {
+	if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x+20) &&  frame < 30) {
 	
 		speed = 0;
 		//image_speed = 0;
-		if (frame == 1 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
+		if (frame == 29 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
 			frameathit = frame;
 			image_index = 0;
+			AttackState();
 			sprite_index = spr_testiukko1hit;
 		}
-		if (frame == frameathit + 40 && hp>0)
-			AttackState();
+		
+		//	AttackState();
 			
-		if (frame == frameathit + 50 && hp>0)
-			image_index = 0;
-			sprite_index = spr_testiukko1idle;
+		//if (frame == frameathit + 50 && hp>0)
+		//	image_index = 0;
+		//	sprite_index = spr_testiukko1idle;
 
 		
 	} 
