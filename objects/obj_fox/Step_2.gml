@@ -79,6 +79,11 @@ if(hitbox != -1){
     }
 }
 
+if (!instance_exists(obj_enemySkeleton)) {
+	speed=1;
+	image_speed=1;
+}
+
 
 //animation 
 //FrameReset(); 
