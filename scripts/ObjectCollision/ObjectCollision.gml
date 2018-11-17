@@ -19,7 +19,8 @@ sprite_bbox_top = argument5;
 sprite_bbox_right = argument6;
 sprite_bbox_left = argument7;
 
-var dx = move_speed * (keyboard_check(vk_right) - keyboard_check((vk_left)));
+//var dx = move_speed * (keyboard_check(vk_right) - keyboard_check(vk_left));
+var dx = move_speed;
 var dy = v_speed;
 v_speed += grav;
 

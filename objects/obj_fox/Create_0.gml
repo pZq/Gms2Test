@@ -4,7 +4,7 @@
 
 
 // basic player info
-move_speed = 8;
+move_speed = 0;
 jump_impulse= 21;
 grav = 0.5;
 v_speed = 0;

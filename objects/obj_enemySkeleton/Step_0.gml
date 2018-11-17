@@ -50,7 +50,22 @@ if (instance_exists(soldierInst) && x >= (soldierInst.x+20) && x <= (soldierInst
 
 }
 */
-if (frame == 29 && !CharacterDies)
+
+/*
+if (hp>0) {
+	skeleInstance = instance_nearest(x,y,obj_enemySkeleton);
+	if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x) && frame < 30) {
+	
+		speed = 0;
+		image_speed = 0;
+		if (frame == 29 && !CharacterDies)
+			AttackState();
+
+	}
+}
+*/
+
+if (frame == 29 && hp>0)
 		AttackState();
 
 /*
