@@ -25,27 +25,14 @@ if (image_speed > 0 && CharacterDies)
 	}
 }	
 
-skeleInstance = instance_find(obj_enemySkeleton, counter);
+skeleInstance = instance_nearest(x,y-10,obj_enemySkeleton);
 if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x) && frame < 30) {
 	
 	speed = 0;
 	image_speed = 0;
-	AttackState();
-	if (frame == 29) {
-		
-		with (skeleInstance){
-			hp += -33;
-			if (hp<=0) {
-				other.counter++;
-				other.speed = 1;
-				other.image_speed = 1;
-				instance_destroy(hurtbox);
-				alarm[0]=room_speed*3;
-				
-			}
-			
-		}
-		
+	if (frame == 29)
+		AttackState();
+	if (skeleInstance.hp <= 0) {
 	}
 }
 
