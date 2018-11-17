@@ -1,18 +1,5 @@
-/*
-Script executelle annetaan alla olevan listan mukaset arvot että skripti osaa
-käyttää niitä:
-
-move_speed = argument0;
-v_speed = argument1;
-grav = argument2;
-tilemap = argument3;
-sprite_bbox_bottom = argument4;
-sprite_bbox_top = argument5;
-sprite_bbox_right = argument6;
-sprite_bbox_left = argument7;
-
-*/
-
+// counting frames
+FrameCounter();
 
 ObjectCollision(move_speed, v_speed, grav, tilemap, sprite_bbox_bottom, sprite_bbox_top, sprite_bbox_right, sprite_bbox_left);
 
@@ -38,9 +25,6 @@ if (image_speed > 0 && CharacterDies)
 	}
 }	
 
-// Start counting frames
-FrameCounter();
-
 skeleInstance = instance_find(obj_enemySkeleton, counter);
 if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x) && frame < 30) {
 	
@@ -56,7 +40,7 @@ if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleIn
 				other.speed = 1;
 				other.image_speed = 1;
 				instance_destroy(hurtbox);
-				other.alarm[0]=room_speed*5;
+				alarm[0]=room_speed*3;
 				
 			}
 			

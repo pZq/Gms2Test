@@ -38,6 +38,7 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 				CreatedInstanceID = instance_create_layer(300,250, "Instances", obj_enemySkeleton);
 				variable_instance_set(CreatedInstanceID, "hp", 100);
 				global.InstanceSkeletonArray = ArrayAdd(global.InstanceSkeletonArray, CreatedInstanceID);
+				
 				break;
 		}
     }
