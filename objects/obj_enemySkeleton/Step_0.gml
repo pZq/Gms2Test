@@ -65,9 +65,21 @@ if (hp>0) {
 }
 */
 
-if (frame == 29 && hp>0)
-		AttackState();
-
+if (frame == 1 && hp>0) {
+		frameathit = frame;
+		image_index = 0;
+		sprite_index = spr_skeletonAttack;
+		
+}
+if (frame == frameathit + 45 && hp > 0) {
+	AttackState();
+}
+if (frame == frameathit + 50 && hp>0) {
+		
+		image_index = 0;
+		sprite_index = spr_skeletonIdle;
+}
+	
 /*
 if(frame == 2 && hitbox == -1){
 	//hurtbox = HurtboxCreate(18,24,55,55);

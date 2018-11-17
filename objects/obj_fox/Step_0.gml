@@ -30,13 +30,19 @@ if (hp>0) {
 	
 		speed = 0;
 		//image_speed = 0;
-		if (frame == 29 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
+		if (frame == 1 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
+			frameathit = frame;
+			image_index = 0;
 			sprite_index = spr_testiukko1hit;
-			AttackState();
 		}
-		if (frame == 34)
+		if (frame == frameathit + 40 && hp>0)
+			AttackState();
+			
+		if (frame == frameathit + 50 && hp>0)
+			image_index = 0;
 			sprite_index = spr_testiukko1idle;
 
+		
 	} 
 	if (instance_exists(obj_enemySkeleton) && !instance_exists(skeleInstance.hurtbox)) {
 		sprite_index = spr_testiukko11walk;

@@ -10,6 +10,7 @@ grav = 0.5;
 v_speed = 0;
 GroundCollision=false;
 CharacterDies=false;
+frameathit=0;
 
 /*
 Using the hurtbox_create script we just made, we are able to set the scale and 
