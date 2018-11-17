@@ -12,7 +12,8 @@ if(hit){
     currentState = states.hit;
 	show_debug_message("hurtbox owner "+string(hurtbox.owner));
 	show_debug_message("hitby owner "+string(hitBy.owner));
-	hp+= -33; // joka osumalla helaa miinuksen verran
+	if (hitBy.owner.object_index != obj_enemySkeleton)
+		hp+= -33; // joka osumalla helaa miinuksen verran
 	if (hp <= 0) {
 		instance_destroy(hurtbox);
 		hitBy.owner.speed=1;
