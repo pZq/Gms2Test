@@ -33,11 +33,13 @@ if (hp>0) {
 		if (frame == 29 && !CharacterDies && instance_exists(skeleInstance.hurtbox))
 			AttackState();
 
-	} else {
+	} 
+	if (instance_exists(obj_enemySkeleton) && !instance_exists(skeleInstance.hurtbox)) {
 		speed = 1;
 		image_speed = 1;
 	}
 }
+
 
 
 
