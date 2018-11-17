@@ -1,8 +1,8 @@
 {
-    "id": "37c1ba8c-c2d9-4077-9706-a5fa9c8717e0",
+    "id": "456f2af7-a960-4a80-bc7d-54ae7d1d3b31",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "snd_skeletonDeath",
+    "name": "snd_swordHit7",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
