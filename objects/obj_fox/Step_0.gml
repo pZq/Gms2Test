@@ -26,13 +26,16 @@ if (image_speed > 0 && CharacterDies)
 
 if (hp>0) {
 	skeleInstance = instance_nearest(x,y,obj_enemySkeleton);
-	if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x) && frame < 30) {
+	if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x+20) && frame < 30) {
 	
 		speed = 0;
 		image_speed = 0;
-		if (frame == 29 && !CharacterDies)
+		if (frame == 29 && !CharacterDies && instance_exists(skeleInstance.hurtbox))
 			AttackState();
 
+	} else {
+		speed = 1;
+		image_speed = 1;
 	}
 }
 

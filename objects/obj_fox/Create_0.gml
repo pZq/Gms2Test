@@ -72,3 +72,7 @@ counter = 0;
 
 facing=1;
 image_xscale = facing;
+
+
+// enemy info
+skeleInstance = instance_nearest(x,y,obj_enemySkeleton);

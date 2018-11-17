@@ -81,11 +81,12 @@ if(hitbox != -1){
     }
 }
 
-if (!instance_exists(obj_enemySkeleton)) {
+/*
+if (!instance_exists(skeleInstance.hurtbox)) {
 	speed=1;
 	image_speed=1;
 }
-
+*/
 
 //animation 
 //FrameReset(); 
