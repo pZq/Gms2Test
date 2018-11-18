@@ -27,7 +27,7 @@ if (image_speed > 0 && CharacterDies)
 if (hp>0) {
 	skeleInstance = instance_nearest(x,y,obj_enemySkeleton);
 	//if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x+20) && frame < 30) {
-	if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x+20) &&  frame < 30) {
+	if (instance_exists(skeleInstance)) {
 	
 		speed = 0;
 		//image_speed = 0;
@@ -38,7 +38,7 @@ if (hp>0) {
 			snd = audio_play_sound (choose (snd_swordHit1,snd_swordHit2,snd_swordHit3,snd_swordHit4,snd_swordHit5,snd_swordHit6,snd_swordHit7),0,false)	
 		}
 		
-		if (frame == framehit +20)
+		if (frame == framehit +26)
 			AttackState();
 			
 		//if (frame == frameathit + 50 && hp>0)

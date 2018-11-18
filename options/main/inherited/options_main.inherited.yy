@@ -1,6 +1,6 @@
 1.0.0←ed6a955d-5826-4f98-a450-10b414266c27←ed6a955d-5826-4f98-a450-10b414266c27|{
     "option_gameguid": "ba721185-3002-4ea7-8cb6-460b4c026210",
-    "option_lastchanged": "31 October 2018 22:13:28",
+    "option_lastchanged": "18 November 2018 22:08:02",
     "option_sci_usesci": true,
     "option_spine_licence": true,
     "option_game_speed": 60
