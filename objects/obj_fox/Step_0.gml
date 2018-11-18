@@ -36,6 +36,8 @@ if (hp>0) {
 			image_index = 0;
 			AttackState();
 			sprite_index = spr_testiukko1hit;
+			snd = audio_play_sound (choose (snd_swordHit1,snd_swordHit2,snd_swordHit3,snd_swordHit4,snd_swordHit5,snd_swordHit6,snd_swordHit7),0,false)
+		
 		}
 		
 		//	AttackState();

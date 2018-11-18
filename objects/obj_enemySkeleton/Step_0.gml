@@ -69,7 +69,7 @@ if (frame == 1 && hp>0) {
 		frameathit = frame;
 		image_index = 0;
 		sprite_index = spr_skeletonAttack;
-		
+		snd = audio_play_sound (choose (snd_axeHit1,snd_axeHit2),0,false)
 }
 if (frame == frameathit + 45 && hp > 0) {
 	AttackState();
