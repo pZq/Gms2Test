@@ -31,14 +31,16 @@ if (hp>0) {
 	
 		speed = 0;
 		//image_speed = 0;
-		if (frame == 1 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
-			framehit = frame;
-			sprite_index = spr_testiukko1hit;
+		if (frame == 29 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
+			frameathit = frame;
 			image_index = 0;
+			AttackState();
+			sprite_index = spr_testiukko1hit;
+			snd = audio_play_sound (choose (snd_swordHit1,snd_swordHit2,snd_swordHit3,snd_swordHit4,snd_swordHit5,snd_swordHit6,snd_swordHit7),0,false)
+		
 		}
 		
-		if (frame == framehit +20)
-			AttackState();
+		//	AttackState();
 			
 		//if (frame == frameathit + 50 && hp>0)
 		//	image_index = 0;

@@ -65,6 +65,8 @@ if (hp>0) {
 }
 */
 
+
+/* return this!!!!
 if (frame == 1 && hp>0) {
 		frameathit = frame;
 		image_index = 0;
@@ -79,6 +81,10 @@ if (frame == frameathit + 50 && hp>0) {
 		image_index = 0;
 		sprite_index = spr_skeletonIdle;
 }
+*/
+
+
+
 	
 /*
 if(frame == 2 && hitbox == -1){
