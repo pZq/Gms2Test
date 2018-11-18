@@ -63,7 +63,7 @@ hp=50;
 max_hp=100;
 
 // move to right
-// uncomment when attack animation is ready - > move_towards_point(x+1, y, 1);
+move_towards_point(x+1, y, 1);
 
 global.InstanceHitboxArray[0] = pointer_null;
 
