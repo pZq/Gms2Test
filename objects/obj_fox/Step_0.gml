@@ -35,6 +35,7 @@ if (hp>0) {
 			framehit = frame;
 			sprite_index = spr_testiukko1hit;
 			image_index = 0;
+			snd = audio_play_sound (choose (snd_swordHit1,snd_swordHit2,snd_swordHit3,snd_swordHit4,snd_swordHit5,snd_swordHit6,snd_swordHit7),0,false)	
 		}
 		
 		if (frame == framehit +20)
