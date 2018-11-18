@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "094f4f3e-5b65-44ed-bf3b-986beccfe2f2",
+            "Value": {
+                "id": "654ebc40-bbaf-49fc-b679-dc0c1e9dee2e",
+                "resourcePath": "sounds\\snd_backgroundBirds\\snd_backgroundBirds.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "09e8b896-6b85-4aa1-9c4d-a5a771ed56f9",
             "Value": {
                 "id": "162029eb-b21d-4b45-9e4e-24f01cd1b18d",
