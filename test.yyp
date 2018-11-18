@@ -527,6 +527,14 @@
             }
         },
         {
+            "Key": "9f0833b3-89e2-4a8e-89a6-8eb1cdcbafa5",
+            "Value": {
+                "id": "2d82444a-26b1-4012-bab7-07e6c9829925",
+                "resourcePath": "objects\\obj_backgroundMusic\\obj_backgroundMusic.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a0e2db5f-3c41-4519-b0c5-56d258da5e53",
             "Value": {
                 "id": "26d31339-6cae-4e5a-9812-039d5db40ca4",
@@ -708,6 +716,14 @@
                 "id": "cbdf32fc-541f-41ee-bada-3ccafefc5faf",
                 "resourcePath": "scripts\\BulletFacingDirectionExamples\\BulletFacingDirectionExamples.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d1f1960a-85b0-4b72-a30a-6ce8a1fc115f",
+            "Value": {
+                "id": "eda14e55-d64d-4d60-aa0a-8f5be9952e56",
+                "resourcePath": "sounds\\snd_background\\snd_background.yy",
+                "resourceType": "GMSound"
             }
         },
         {
