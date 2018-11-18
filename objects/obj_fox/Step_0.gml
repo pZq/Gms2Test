@@ -31,14 +31,14 @@ if (hp>0) {
 	
 		speed = 0;
 		//image_speed = 0;
-		if (frame == 29 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
-			frameathit = frame;
-			image_index = 0;
-			AttackState();
+		if (frame == 1 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
+			framehit = frame;
 			sprite_index = spr_testiukko1hit;
+			image_index = 0;
 		}
 		
-		//	AttackState();
+		if (frame == framehit +20)
+			AttackState();
 			
 		//if (frame == frameathit + 50 && hp>0)
 		//	image_index = 0;
