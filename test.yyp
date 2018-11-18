@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "06a17078-826e-418f-9464-0cb8beaf801c",
+            "Value": {
+                "id": "c5aaff0d-6910-42ac-9320-584506fc7131",
+                "resourcePath": "views\\06a17078-826e-418f-9464-0cb8beaf801c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "094f4f3e-5b65-44ed-bf3b-986beccfe2f2",
             "Value": {
                 "id": "654ebc40-bbaf-49fc-b679-dc0c1e9dee2e",
@@ -90,7 +98,7 @@
             "Key": "16044e23-0d97-4527-b95b-cbacf45a912a",
             "Value": {
                 "id": "91182c25-1197-43b2-974f-c2650424f40a",
-                "resourcePath": "sounds\\snd_background2\\snd_background2.yy",
+                "resourcePath": "sounds\\snd_backgroundMusic2\\snd_backgroundMusic2.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -663,6 +671,14 @@
             }
         },
         {
+            "Key": "bca6a49f-0177-49f2-870d-83496b9d3069",
+            "Value": {
+                "id": "92cf3e52-7986-4520-ab9b-79e55ab3567d",
+                "resourcePath": "sounds\\snd_backgroundWind\\snd_backgroundWind.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "bdfe27fa-afda-4759-b1bc-7ab03b593260",
             "Value": {
                 "id": "e0b6a24b-cd7e-4aff-a5bc-1e0c6f92b907",
@@ -738,7 +754,7 @@
             "Key": "d1f1960a-85b0-4b72-a30a-6ce8a1fc115f",
             "Value": {
                 "id": "eda14e55-d64d-4d60-aa0a-8f5be9952e56",
-                "resourcePath": "sounds\\snd_background\\snd_background.yy",
+                "resourcePath": "sounds\\snd_backgroundMusic1\\snd_backgroundMusic1.yy",
                 "resourceType": "GMSound"
             }
         },
