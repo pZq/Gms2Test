@@ -1,15 +1,20 @@
-/// @function ShakeScreen(min,max,nShakes)
+/// @function ShakeScreen(min,max)
 /// @param min Represents the number of pixels the screenshake may move at the least
 /// @param max Represents the number of pixels the screenshake may move at most
-/// @param nShakes How many times screen is shaked. 1 time just moves screen one time
+/// @param count Number of shakes to perform
 
-//nShakes = argument2;
-nShakes = 10;
+shakes = argument2;
+shakespeed = argument3;
 
-for (i=0;i<nShakes;i++) {
+// The COUNT valiu comes from obj_HudButtonScript when pressing the button
+// to shake screen
+if (COUNT <= shakes) {
 	var cam = view_get_camera(0);
 	xview = camera_get_view_x(cam);
 	yview = camera_get_view_y(cam);
 	camera_set_view_pos(cam, xview+(random_range(argument0,argument1)*(choose(1,-1))),yview+(random_range(argument0,argument1)*(choose(1,-1))));
+	COUNT++;
+	alarm[0] = shakespeed;
+} else { 
+	camera_set_view_pos(view_camera[0], CurrentCameraX, CurrentCameraY);
 }
-camera_set_view_pos(view_camera[0], CurrentCameraX, CurrentCameraY);

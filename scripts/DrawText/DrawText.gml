@@ -1,5 +1,5 @@
 /// @function DrawText(text)
-/// @param {string} text text to write on screen
+/// @param {string} text
 
 text = argument0;
 

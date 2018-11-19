@@ -12,13 +12,12 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 				CreatedInstanceID = instance_create_layer(x,250, "Instances", obj_fox); // create fox object to instances layers
 				variable_instance_set(CreatedInstanceID, "hp", 100); // give HP to created instance (randomly between 0..100)
 				global.InstanceArray = ArrayAdd(global.InstanceArray, CreatedInstanceID);
-				
 				break;
 			case global.BUTTON_INSTANCE2: // If second button was pressed
 				image_index = 1; // sprite image 1
-				COUNT = 0;	
 				CurrentCameraX = camera_get_view_x(view_camera[0]);
 				CurrentCameraY = camera_get_view_y(view_camera[0]);
+				COUNT=0;
 				alarm[0] = 1; // this alarm executes the obj_HudButton alarm and not this obj_HudButtonScript alarm.
 				
 				// This for statement gets all create obj_fox instances, and reduces the individual instance 

@@ -1,9 +1,2 @@
-if (COUNT <= 10) {
-// (min, max, nShakes)
-ShakeScreen(1,5);
-COUNT++;
-alarm[0] = 3;
-} 
-else {
-	camera_set_view_pos(view_camera[0], CurrentCameraX, CurrentCameraY);	
-}
+// (min, max, numbeShakes, shakespeed(1=max speed))
+ShakeScreen(1,5,10,3);
