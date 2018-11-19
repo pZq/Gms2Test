@@ -12,7 +12,7 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 				CreatedInstanceID = instance_create_layer(x,250, "Instances", obj_fox); // create fox object to instances layers
 				variable_instance_set(CreatedInstanceID, "hp", 100); // give HP to created instance (randomly between 0..100)
 				global.InstanceArray = ArrayAdd(global.InstanceArray, CreatedInstanceID);
-				show_debug_message("Soldier "+string(CreatedInstanceID));
+				
 				break;
 			case global.BUTTON_INSTANCE2: // If second button was pressed
 				image_index = 1; // sprite image 1
