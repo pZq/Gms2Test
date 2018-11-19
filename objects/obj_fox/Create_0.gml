@@ -78,3 +78,5 @@ image_xscale = facing;
 
 // enemy info
 skeleInstance = instance_nearest(x,y,obj_enemySkeleton);
+
+ShakeHit = false;

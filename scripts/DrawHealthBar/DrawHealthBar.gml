@@ -1,4 +1,6 @@
 /// @function DrawHealthBar(CharacterDies)
+/// @description  If char get CharacterDies=true value from this object step event. Lets hide healthbar
+/// @description  (true/false, offsetx, offsety) -> offset where t ostart to draw the healtbar.
 /// @param {bool} CharacterDies -> tells if character is dead or not
 /// @param {real} offsetX
 /// @param {real} offsetY
@@ -6,7 +8,6 @@
 CharDied = argument0;
 offsetX = argument1;
 offsetY = argument2;
-
 
 dx = x-offsetX;
 dy = y-offsetY;

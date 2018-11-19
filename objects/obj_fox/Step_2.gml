@@ -30,14 +30,21 @@ if(hit){
 	}
 	
 	if (hp <= 0) {
-		instance_destroy(hurtbox);
 		//hitBy.owner.speed=1;
 		//hitBy.owner.image_speed=1;
+		instance_destroy(hurtbox);
 		alarm[0]=room_speed*3;
 	}
-}
+	
+} 
 
+if(hp <= 0 && ShakeHit){
+	ShakeHit=false;
+	instance_destroy(hurtbox);
+	alarm[0]=room_speed*3;
+}
 /*
+
 Quick recap of what's happening here. We check to see if we actually have a hitbox at the time, 
 and if so, we then check all hurtbox objects to see if any of them are colliding with this particular 
 hitbox instance. When using with it's important to note that if you just use the name of an object, 

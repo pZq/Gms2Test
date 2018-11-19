@@ -19,7 +19,6 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 				CurrentCameraY = camera_get_view_y(view_camera[0]);
 				COUNT=0;
 				alarm[0] = 1; // this alarm executes the obj_HudButton alarm and not this obj_HudButtonScript alarm.
-				
 				// This for statement gets all create obj_fox instances, and reduces the individual instance 
 				// HP with eg -10 
 				for (i=array_length_1d(global.InstanceArray);i>=0;i--) {
@@ -27,6 +26,7 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 					if (variable_instance_exists(ObjInstance, "hp")) { // if current instance has the hp variable, lets reduce the value by 10
 						CurrentHP = variable_instance_get(ObjInstance, "hp")
 						variable_instance_set(ObjInstance, "hp", CurrentHP-10);
+						ObjInstance.ShakeHit=true;
 					}
 				}
 				

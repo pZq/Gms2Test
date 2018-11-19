@@ -21,3 +21,5 @@ obj_HudButton.image_index = 0;
 with (instance_find(obj_HudButton, 0)) {
 		image_index = global.BUTTON_FOX_UP;
 }
+
+global.SHAKEHIT = false;

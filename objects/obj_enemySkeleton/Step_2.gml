@@ -10,12 +10,12 @@ if(hit){
     facing = hitBy.owner.facing * -1;
     hit = false;
     currentState = states.hit;
-	show_debug_message("hurtbox owner "+string(hurtbox.owner));
-	show_debug_message("hitby owner "+string(hitBy.owner));
 	if (hitBy.owner.object_index != obj_enemySkeleton) {
 		hp+= -33; // joka osumalla helaa miinuksen verran
 	}
-		
+	
+	// this must be here. if hitBy.owner object calls are outside this if hit statement. 
+	// game will crash when skeleton dies...
 	if (hp <= 0) {
 		instance_destroy(hurtbox);
 		hitBy.owner.speed=1;
