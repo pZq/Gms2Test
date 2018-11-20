@@ -1,2 +1,4 @@
 ///init
 EnumInit();
+
+MacroInit();

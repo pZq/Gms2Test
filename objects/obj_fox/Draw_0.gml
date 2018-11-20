@@ -5,4 +5,3 @@ draw_self();
 // (true/false, offsetx, offsety) -> offset where t ostart to draw the healtbar.
 DrawHealthBar(CharacterDies, 9, 35);
 
-

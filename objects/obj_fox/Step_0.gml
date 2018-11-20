@@ -41,7 +41,6 @@ if (hp>0) {
 		// ukkeli attack sprite is 7 fps, game gps = 60 -> 60/7 = 8.57
 		// Ukkeli attack max reach at fram 3 so -> 3x8.57 = 25.7
 		// Then in if above, the animation is started on frame 1 so 25.7 + 1 = 26.7 which is ~ 27
-		
 		if ((framehit + 27) < 60) {
 			if (frame == framehit +27) {
 				AttackState();
@@ -65,6 +64,17 @@ if (hp>0) {
 		speed = 1;
 		image_speed = 1;
 	}
+	
+	/*
+	OwnNearestInstance = instance_nearest(x,y,obj_fox);
+	if (instance_exists(OwnNearestInstance) && x >= (OwnNearestInstance.x-20) && x <= (OwnNearestInstance.x+20)) {
+		speed = 0;
+		image_speed = 0;
+	} else {
+		speed = 1;
+		image_speed = 1;
+	}
+	*/
 }
 
 
