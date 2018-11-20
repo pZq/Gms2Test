@@ -18,9 +18,9 @@ if(hitbox != -1){
 
         //check to see if the hurtbox is touching your hitbox        
         with(obj_hurtbox){
+							
             if(place_meeting(x,y,other) && other.owner != owner){
-                
-				//ignore check
+                //ignore check
                 //checking collision from the hitbox object
                 with(other){
                     //check to see if your target is on the ignore list

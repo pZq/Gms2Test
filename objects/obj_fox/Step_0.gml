@@ -28,7 +28,6 @@ if (hp>0) {
 	skeleInstance = instance_nearest(x,y,obj_enemySkeleton);
 	if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x+20)) {
 	
-		speed = 0;
 		//if (frame == 1 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
 		if (!AttackStarted && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
 			framehit = frame;
