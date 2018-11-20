@@ -1,7 +1,5 @@
-with(hurtbox){
-    x = other.x + xOffset;
-    y = other.y + yOffset;
-}
+//hurtbox
+HurtboxFollow();
 
 //get hit
 if(hit){
