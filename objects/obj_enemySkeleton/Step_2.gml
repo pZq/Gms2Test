@@ -5,14 +5,11 @@ with(hurtbox){
 
 //get hit
 if(hit){
-	xSpeed = hitBy.xHit;
-    hitStun = hitBy.hitStun;
-    facing = hitBy.owner.facing * -1;
-    hit = false;
-    currentState = states.hit;
-	if (hitBy.owner.object_index != obj_enemySkeleton) {
-		hp+= -33; // joka osumalla helaa miinuksen verran
-	}
+	HitInitialize();
+	
+	// so here if "allies" hits -> no HP loss is taken
+	IfHitByLooseHP(self, 0); 
+	IfHitByLooseHP(obj_fox, -20); 
 	
 	// this must be here. if hitBy.owner object calls are outside this if hit statement. 
 	// game will crash when skeleton dies...

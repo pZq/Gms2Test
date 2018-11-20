@@ -18,16 +18,10 @@ with(hurtbox){
 
 //get hit
 if(hit){
-	xSpeed = hitBy.xHit;
-    hitStun = hitBy.hitStun;
-    facing = hitBy.owner.facing * -1;
-    hit = false;
-    currentState = states.hit;
-	//show_debug_message("hurtbox owner "+string(hurtbox.owner));
-	//show_debug_message("hitby owner "+string(hitBy.owner));
-	if (hitBy.owner.object_index != obj_fox){
-		hp+= -33; // joka osumalla helaa miinuksen verran
-	}
+	HitInitialize();
+
+	IfHitByLooseHP(self, 0); // this reduces HP if any other than fox object hits.
+	IfHitByLooseHP(obj_enemySkeleton, -10); 
 	
 	if (hp <= 0) {
 		//hitBy.owner.speed=1;
