@@ -25,11 +25,11 @@ if (image_speed > 0 && CharacterDies)
 }	
 
 if (hp>0) {
-	skeleInstance = instance_nearest(x,y,obj_enemySkeleton);
-	if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x+20)) {
+	objInstance = instance_nearest(x,y,obj_enemySkeleton);
+	if (instance_exists(objInstance) && x >= (objInstance.x-20) && x <= (objInstance.x+20)) {
 	
-		//if (frame == 1 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
-		if (!AttackStarted && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
+		//if (frame == 1 && !CharacterDies && instance_exists(objInstance.hurtbox)){
+		if (!AttackStarted && !CharacterDies && instance_exists(objInstance.hurtbox)){
 			framehit = frame;
 			image_index = -1;
 			sprite_index = spr_testiukko1hit;
@@ -51,31 +51,10 @@ if (hp>0) {
 				AttackStarted = false;
 			}
 		}
-		
-		//if (frame == frameathit + 50 && hp>0)
-		//	image_index = 0;
-		//	sprite_index = spr_testiukko1idle;
-
-		
 	} 
-	if (instance_exists(obj_enemySkeleton) && !instance_exists(skeleInstance.hurtbox)) {
+	if (instance_exists(obj_enemySkeleton) && !instance_exists(objInstance.hurtbox)) {
 		sprite_index = spr_testiukko11walk;
-		speed = 1;
+		speed = 1*facing;
 		image_speed = 1;
 	}
-	
-	/*
-	OwnNearestInstance = instance_nearest(x,y,obj_fox);
-	if (instance_exists(OwnNearestInstance) && x >= (OwnNearestInstance.x-20) && x <= (OwnNearestInstance.x+20)) {
-		speed = 0;
-		image_speed = 0;
-	} else {
-		speed = 1;
-		image_speed = 1;
-	}
-	*/
 }
-
-
-
-

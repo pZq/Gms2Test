@@ -51,49 +51,40 @@ if (instance_exists(soldierInst) && x >= (soldierInst.x+20) && x <= (soldierInst
 }
 */
 
-/*
 if (hp>0) {
-	skeleInstance = instance_nearest(x,y,obj_enemySkeleton);
-	if (instance_exists(skeleInstance) && x >= (skeleInstance.x-20) && x <= (skeleInstance.x) && frame < 30) {
+	objInstance = instance_nearest(x,y,obj_fox);
+	if (instance_exists(objInstance) && x >= (objInstance.x-20) && x <= (objInstance.x+20)) {
 	
-		speed = 0;
-		image_speed = 0;
-		if (frame == 29 && !CharacterDies)
-			AttackState();
-
+		//if (frame == 1 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
+		if (!AttackStarted && !CharacterDies && instance_exists(objInstance.hurtbox)){
+			framehit = frame;
+			image_index = -1;
+			sprite_index = spr_skeletonAttack;
+			snd = audio_play_sound (choose (snd_swordHit1,snd_swordHit2,snd_swordHit3,snd_swordHit4,snd_swordHit5,snd_swordHit6,snd_swordHit7),0,false)	
+			AttackStarted = true;
+		}
+		
+		// ukkeli attack sprite is 7 fps, game gps = 60 -> 60/7 = 8.57
+		// Ukkeli attack max reach at fram 3 so -> 3x8.57 = 25.7
+		// Then in if above, the animation is started on frame 1 so 25.7 + 1 = 26.7 which is ~ 27
+		if ((framehit + 27) < 60) {
+			if (frame == framehit +27) {
+				AttackState();
+				AttackStarted = false;
+			}
+		} else {
+			if (frame == (framehit+27)-60){
+				AttackState();
+				AttackStarted = false;
+			}
+		}
+	} 
+	if (instance_exists(obj_fox) && !instance_exists(objInstance.hurtbox)) {
+		sprite_index = spr_skeletonWalk;
+		speed = 1*facing;
+		image_speed = 1;
 	}
 }
-*/
-
-
-
-if (frame == 1 && hp>0) {
-		frameathit = frame;
-		image_index = 0;
-		sprite_index = spr_skeletonAttack;
-		
-}
-if (frame == frameathit + 45 && hp > 0) {
-	snd = audio_play_sound (choose (snd_axeHit1,snd_axeHit2),0,false)
-	audio_sound_set_track_position(snd, 0.25);
-	AttackState();
-}
-if (frame == frameathit + 50 && hp>0) {
-		
-		image_index = 0;
-		sprite_index = spr_skeletonIdle;
-}
-
-
-
-
-	
-/*
-if(frame == 2 && hitbox == -1){
-	//hurtbox = HurtboxCreate(18,24,55,55);
-    hitbox = HitboxCreate(33 * facing,24,55 * facing,55,8,3 * facing,45);
-}
-*/
 
 
 					

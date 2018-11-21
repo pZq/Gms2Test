@@ -19,12 +19,12 @@ I added mine right below the animation code.
 hurtbox = HurtboxCreate(18,24,-9,0);
 
 // move to right
-move_towards_point(x+1, y, 1);
+move_towards_point(x+(1*facing), y, 1);
 
 global.InstanceHitboxArray[0] = pointer_null;
 
 counter = 0;
 
 // enemy info
-skeleInstance = instance_nearest(x,y,obj_enemySkeleton);
+objInstance = instance_nearest(x,y,obj_enemySkeleton);
 ShakeHit = false;

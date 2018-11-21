@@ -18,8 +18,10 @@ I added mine right below the animation code.
 //hurtbox
 hurtbox = HurtboxCreate(18,24,-6,-10);
 
+// move to left
+move_towards_point(x+(1*facing), y, 1);
 
-
-
+// enemy info
+objInstance = instance_nearest(x,y,obj_enemySkeleton);
 
 
