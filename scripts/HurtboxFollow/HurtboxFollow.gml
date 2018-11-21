@@ -16,9 +16,14 @@ In this case, that is our oPlayer object.
 with(hurtbox){
     x = other.x + xOffset;
     y = other.y + yOffset;
-	if(place_meeting(x+6,y, obj_hurtbox)&& object_get_name(owner.object_index) == "obj_fox") {
+	if(place_meeting(x+6,y, obj_hurtbox) && object_get_name(owner.object_index) == "obj_fox") {
 		owner.speed=0;
-	} 
+	}
+	
+	if (!place_meeting(x+6,y, obj_hurtbox) && object_get_name(owner.object_index) == "obj_fox") {
+		owner.speed=1;
+	}
+	
 	/*else {
 		if (object_get_name(obj_hurtbox.owner.object_index) == "obj_fox")
 			other.speed=1;
