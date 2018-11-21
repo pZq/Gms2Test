@@ -26,7 +26,8 @@ if (image_speed > 0 && CharacterDies)
 
 if (hp>0) {
 	objInstance = instance_nearest(x,y,obj_enemySkeleton);
-	if (instance_exists(objInstance) && x >= (objInstance.x-20) && x <= (objInstance.x+20)) {
+	//if (instance_exists(objInstance) && x >= (objInstance.x-20) && x <= (objInstance.x+20)) {
+	if (instance_exists(objInstance) && place_meeting(x+15,y, objInstance.hurtbox)) {
 	
 		//if (frame == 1 && !CharacterDies && instance_exists(objInstance.hurtbox)){
 		if (!AttackStarted && !CharacterDies && instance_exists(objInstance.hurtbox)){
