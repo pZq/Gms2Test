@@ -17,7 +17,7 @@ with(hurtbox){
     x = other.x + xOffset;
     y = other.y + yOffset;
 	
-	dx=20;
+	dx=15;
 	
 	// if soldier hurtbox
 	//if (owner.object_index == 5) {

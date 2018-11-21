@@ -29,4 +29,4 @@ if(frame == 2 && hitbox == -1){
 }
 */
 
-hitbox = HitboxCreate(40 * facing,24,0 * facing,0,8,0 * facing,0);
+hitbox = HitboxCreate(33 * facing,24,0 * facing,0,8,0 * facing,0);
