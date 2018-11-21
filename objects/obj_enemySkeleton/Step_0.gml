@@ -52,11 +52,8 @@ if (instance_exists(soldierInst) && x >= (soldierInst.x+20) && x <= (soldierInst
 
 if (hp>0) {
 	objInstance = instance_nearest(x,y,obj_fox);
-	//if (instance_exists(objInstance) && place_meeting(x-6,y, objInstance.hurtbox)) {
-	if (instance_exists(objInstance) && x <= (objInstance.x+20) && x >= (objInstance.x-20)) {
+	if (instance_exists(objInstance) && place_meeting(x-15,y, objInstance.hurtbox)) {
 	
-	
-		//if (frame == 1 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
 		if (!AttackStarted && !CharacterDies && instance_exists(objInstance.hurtbox)){
 			framehit = frame;
 			image_index = 6;
