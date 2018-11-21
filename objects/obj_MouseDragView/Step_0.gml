@@ -18,5 +18,8 @@ camera_set_view_pos(view_camera[0],
 var _cam_x = camera_get_view_x(view_camera[0]) ;
 layer_x("BackgroundsMountains", _cam_x * 0.10); // Change the background layer name to whatever you use in the room editor
 layer_x("Foreground", _cam_x * -0.20);   // Change the 0.25 and 0.5 values to change the speed of the effect
-
+layer_x("GroundObj2" , _cam_x * 0.20);
+layer_x("Ground1" , _cam_x * 0.20);
+layer_x("Instances_1" , _cam_x * 0.20);
+layer_x("GroundObj2_1" , _cam_x * 0.20);
 }
