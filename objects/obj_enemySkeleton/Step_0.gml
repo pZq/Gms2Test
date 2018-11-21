@@ -21,7 +21,6 @@ if (image_speed > 0 && CharacterDies)
 {
 	if (image_index > image_number - 1) {
 		image_speed = 0;
-		//instance_destroy();		
 	}
 }	
 
@@ -54,14 +53,14 @@ if (instance_exists(soldierInst) && x >= (soldierInst.x+20) && x <= (soldierInst
 if (hp>0) {
 	objInstance = instance_nearest(x,y,obj_fox);
 	//if (instance_exists(objInstance) && x >= (objInstance.x-20) && x <= (objInstance.x+20)) {
-	if (instance_exists(objInstance) && place_meeting(x-6,y, obj_hurtbox)) {
+	if (instance_exists(objInstance) && place_meeting(x-6,y, objInstance.hurtbox)) {
 	
 		//if (frame == 1 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
 		if (!AttackStarted && !CharacterDies && instance_exists(objInstance.hurtbox)){
 			framehit = frame;
 			image_index = 5;
 			sprite_index = spr_skeletonAttack;
-			snd = audio_play_sound (choose (snd_swordHit1,snd_swordHit2,snd_swordHit3,snd_swordHit4,snd_swordHit5,snd_swordHit6,snd_swordHit7),0,false)	
+			snd = audio_play_sound (choose (snd_axeHit1,snd_axeHit2),0,false)	
 			AttackStarted = true;
 		}
 		

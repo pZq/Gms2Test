@@ -16,10 +16,10 @@ If you are following along from previous entries in this series,
 I added mine right below the animation code.
 */
 //hurtbox
-hurtbox = HurtboxCreate(18,24,-6,-10);
+hurtbox = HurtboxCreate(18,24,-6,0);
 
 // move to left
-move_towards_point(x+(1*facing), y, 1);
+move_towards_point(x+1, y, 1);
 
 counter = 0;
 
