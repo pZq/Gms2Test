@@ -19,6 +19,12 @@ if(hit){
 	}
 }
 
+if(hp <= 0 && ShakeHit){
+	ShakeHit=false;
+	instance_destroy(hurtbox);
+	alarm[0]=room_speed*3;
+}
+
 // Common function related to hitbox and hurtbox colliding. Can be used in all characters i suppose !?
 CommonHitBox();
 

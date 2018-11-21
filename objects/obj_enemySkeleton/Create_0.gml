@@ -21,7 +21,8 @@ hurtbox = HurtboxCreate(18,24,-6,-10);
 // move to left
 move_towards_point(x+(1*facing), y, 1);
 
+counter = 0;
+
 // enemy info
-objInstance = instance_nearest(x,y,obj_enemySkeleton);
-
-
+objInstance = instance_nearest(x,y,obj_fox);
+ShakeHit = false;
