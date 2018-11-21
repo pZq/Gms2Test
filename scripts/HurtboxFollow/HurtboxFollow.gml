@@ -16,16 +16,32 @@ In this case, that is our oPlayer object.
 with(hurtbox){
     x = other.x + xOffset;
     y = other.y + yOffset;
-	if(place_meeting(x+6,y, obj_hurtbox) && object_get_name(owner.object_index) == "obj_fox") {
-		owner.speed=0;
+	
+	// if soldier hurtbox
+	if (owner.object_index == 5) {
+		// If (current character hurtbox meets a hurtbox) AND (the owner of this hurtbox (soldier) type == type of soldier)
+		if(place_meeting(x+6,y, obj_hurtbox)) {
+			owner.speed=0;
+			owner.image_speed=0;
+		}	
+		// If (current character hurtbox does not meet a hurtbox) AND (the owner of this hurtbox (soldier) type == type of soldier)
+		if (!place_meeting(x+6,y, obj_hurtbox)) {
+			owner.speed=1*other.facing;
+			owner.image_speed=1;
+		}
 	}
 	
-	if (!place_meeting(x+6,y, obj_hurtbox) && object_get_name(owner.object_index) == "obj_fox") {
-		owner.speed=1;
+	// if skele hurtbox
+	if (owner.object_index == 7) {
+		// If (current character hurtbox meets a hurtbox) AND (the owner of this hurtbox (soldier) type == type of soldier)
+		if(place_meeting(x+6,y, obj_hurtbox)) {
+			owner.speed=0;
+			owner.image_speed=0;
+		}	
+		// If (current character hurtbox does not meet a hurtbox) AND (the owner of this hurtbox (soldier) type == type of soldier)
+		if (!place_meeting(x+6,y, obj_hurtbox)) {
+			owner.speed=1*other.facing;
+			owner.image_speed=1;
+		}
 	}
-	
-	/*else {
-		if (object_get_name(obj_hurtbox.owner.object_index) == "obj_fox")
-			other.speed=1;
-	}*/
 }

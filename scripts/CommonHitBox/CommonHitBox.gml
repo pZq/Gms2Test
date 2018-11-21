@@ -31,7 +31,6 @@ if(hitbox != -1){
                             break;
                         }
                     }
-					
 
                     //if it is NOT on the ignore list, hit it, and add it to
                     //the ignore list
