@@ -58,7 +58,7 @@ if (hp>0) {
 		//if (frame == 1 && !CharacterDies && instance_exists(skeleInstance.hurtbox)){
 		if (!AttackStarted && !CharacterDies && instance_exists(objInstance.hurtbox)){
 			framehit = frame;
-			image_index = 8;
+			image_index = 6;
 			sprite_index = spr_skeletonAttack;
 			snd = audio_play_sound (choose (snd_axeHit1,snd_axeHit2),0,false)	
 			AttackStarted = true;
