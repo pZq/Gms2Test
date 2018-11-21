@@ -17,23 +17,24 @@ with(hurtbox){
     x = other.x + xOffset;
     y = other.y + yOffset;
 	
-	dx=5;
+	dx=20;
 	
 	// if soldier hurtbox
-	if (owner.object_index == 5) {
+	//if (owner.object_index == 5) {
 		// If (current character hurtbox meets a hurtbox) AND (the owner of this hurtbox (soldier) type == type of soldier)
-		if(place_meeting(x+dx,y, obj_hurtbox)) {
+		if(place_meeting(x+(dx*other.facing),y, obj_hurtbox)) {
 			owner.speed=0;
 			
 		}	
 		// If (current character hurtbox does not meet a hurtbox) AND (the owner of this hurtbox (soldier) type == type of soldier)
-		if (!place_meeting(x+dx,y, obj_hurtbox)) {
+		if (!place_meeting(x+(dx*other.facing),y, obj_hurtbox)) {
 			owner.speed=1*other.facing;
 			owner.image_speed=1;
 		}
-	}
+	//}
 	
 	// if skele hurtbox
+	/*
 	if (owner.object_index == 6) {
 		// If (current character hurtbox meets a hurtbox) AND (the owner of this hurtbox (soldier) type == type of soldier)
 		if(place_meeting(x-dx,y, obj_hurtbox)) {
@@ -45,5 +46,5 @@ with(hurtbox){
 			owner.speed=1*other.facing;
 			owner.image_speed=1;
 		}
-	}
+	}*/
 }

@@ -27,7 +27,7 @@ if (image_speed > 0 && CharacterDies)
 if (hp>0) {
 	objInstance = instance_nearest(x,y,obj_enemySkeleton);
 	//if (instance_exists(objInstance) && x >= (objInstance.x-20) && x <= (objInstance.x+20)) {
-	if (instance_exists(objInstance) && place_meeting(x+15,y, objInstance.hurtbox)) {
+	if (instance_exists(objInstance) && place_meeting(x+25,y, objInstance.hurtbox)) {
 	
 		//if (frame == 1 && !CharacterDies && instance_exists(objInstance.hurtbox)){
 		if (!AttackStarted && !CharacterDies && instance_exists(objInstance.hurtbox)){
@@ -53,9 +53,5 @@ if (hp>0) {
 			}
 		}
 	} 
-	if (instance_exists(obj_enemySkeleton) && !instance_exists(objInstance.hurtbox)) {
-		sprite_index = spr_testiukko11walk;
-		speed = 1*facing;
-		image_speed = 1;
-	}
+
 }

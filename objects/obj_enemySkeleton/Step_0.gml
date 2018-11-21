@@ -52,7 +52,7 @@ if (instance_exists(soldierInst) && x >= (soldierInst.x+20) && x <= (soldierInst
 
 if (hp>0) {
 	objInstance = instance_nearest(x,y,obj_fox);
-	if (instance_exists(objInstance) && place_meeting(x-15,y, objInstance.hurtbox)) {
+	if (instance_exists(objInstance) && place_meeting(x-25,y, objInstance.hurtbox)) {
 	
 		if (!AttackStarted && !CharacterDies && instance_exists(objInstance.hurtbox)){
 			framehit = frame;
@@ -77,11 +77,6 @@ if (hp>0) {
 			}
 		}
 	} 
-	if (instance_exists(obj_fox) && !instance_exists(objInstance.hurtbox)) {
-		sprite_index = spr_skeletonWalk;
-		speed = 1*facing;
-		image_speed = 1;
-	}
 }
 
 
