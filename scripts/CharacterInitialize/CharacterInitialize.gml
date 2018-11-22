@@ -4,7 +4,7 @@
 
 // basic player info
 move_speed = 0;
-jump_impulse= 21;
+jump_impulse= 0; // ???
 grav = 0.5;
 v_speed = 0;
 GroundCollision=false;

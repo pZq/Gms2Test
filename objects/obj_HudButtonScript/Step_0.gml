@@ -13,6 +13,8 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 				CreatedInstanceID1 = instance_create_layer(x,100, "Instances_1", obj_fox); // create fox object to instances layers
 				CreatedInstanceID1.image_xscale=0.7;
 				CreatedInstanceID1.image_yscale=0.7;
+				
+				//CreatedInstanceID1.sprite_width = CreatedInstanceID1.sprite_width/2;
 				variable_instance_set(CreatedInstanceID, "hp", 100); // give HP to created instance (randomly between 0..100)
 				variable_instance_set(CreatedInstanceID1, "hp", 100); // give HP to created instance (randomly between 0..100)
 				global.InstanceArray = ArrayAdd(global.InstanceArray, CreatedInstanceID);
