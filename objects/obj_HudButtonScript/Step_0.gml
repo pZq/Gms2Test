@@ -10,7 +10,11 @@ if ( device_mouse_check_button_pressed( 0, mb_left ) )
 			case global.BUTTON_INSTANCE1: // If first button was pressed
 			    image_index = global.BUTTON_FOX_DOWN; // Fox button down sprite image
 				CreatedInstanceID = instance_create_layer(x,400, "Instances", obj_fox); // create fox object to instances layers
+				CreatedInstanceID1 = instance_create_layer(x,100, "Instances_1", obj_fox); // create fox object to instances layers
+				CreatedInstanceID1.image_xscale=0.7;
+				CreatedInstanceID1.image_yscale=0.7;
 				variable_instance_set(CreatedInstanceID, "hp", 100); // give HP to created instance (randomly between 0..100)
+				variable_instance_set(CreatedInstanceID1, "hp", 100); // give HP to created instance (randomly between 0..100)
 				global.InstanceArray = ArrayAdd(global.InstanceArray, CreatedInstanceID);
 				break;
 			case global.BUTTON_INSTANCE2: // If second button was pressed
