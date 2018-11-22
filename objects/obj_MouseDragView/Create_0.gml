@@ -1,0 +1,1 @@
+global.CreatedInstanceID1 = pointer_null;
