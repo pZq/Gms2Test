@@ -34,7 +34,11 @@ if (dy > 0)
 	// When sprite bounding box hits the collision tile
 	if (t1 != 0 || t2 != 0)
 	{
-		y = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		if (image_xscale==0.6)
+			y = (y&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		//if (image_xscale==1.0)
+		else
+			y = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 		v_speed = 0;
 		
 		// set a flag to true on ground collision detected. Used eg in obj_fox step event

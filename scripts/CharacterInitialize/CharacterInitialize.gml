@@ -11,6 +11,7 @@ GroundCollision=false;
 facing=argument0;
 image_xscale = facing;
 
+
 //sprite info
 sprite = sprite_index;
 sprite_bbox_left = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_index);
