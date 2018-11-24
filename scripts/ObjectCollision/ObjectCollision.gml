@@ -42,7 +42,6 @@ if (dy > 0)
 		}
 		else
 			y = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
-		// TSEKKAA mikä Xscale / yscale skelellä on käyttäen debug moodia
 		
 		v_speed = 0;
 		
@@ -57,6 +56,15 @@ else {//upwards
 	if (t1 != 0 || t2 != 0) 
 	{
 	y = ((bbox_top + 16) & ~ 15) - sprite_bbox_top; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+	if (image_yscale==0.6) {
+		if (object_index == obj_enemySkeleton)
+			y = (y&~9); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		if (object_index == obj_fox)
+			y = (y&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+	}
+	else
+		y = ((bbox_top & ~ 15) - 1) - sprite_bbox_top; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		
 	v_speed = 0;
 	}
 }
@@ -78,8 +86,8 @@ if (dx > 0)
 			if (object_index == obj_fox)
 				x = (x&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 		}
-		else
-			x = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+	else
+		x = ((bbox_right & ~ 15) - 1) - sprite_bbox_right; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 	
 	}
 }
@@ -95,8 +103,8 @@ else {//left
 				x = (x&~9); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 			if (object_index == obj_fox)
 				x = (x&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
-		}
-		else
-			x = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+	}
+	else
+		x = ((bbox_left & ~ 15) - 1) - sprite_bbox_left; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 	}
 }
