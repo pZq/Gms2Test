@@ -34,11 +34,16 @@ if (dy > 0)
 	// When sprite bounding box hits the collision tile
 	if (t1 != 0 || t2 != 0)
 	{
-		if (image_xscale==0.6)
-			y = (y&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
-		//if (image_xscale==1.0)
+		if (image_yscale==0.6) {
+			if (object_index == obj_enemySkeleton)
+				y = (y&~9); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+			if (object_index == obj_fox)
+				y = (y&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		}
 		else
 			y = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		// TSEKKAA mikä Xscale / yscale skelellä on käyttäen debug moodia
+		
 		v_speed = 0;
 		
 		// set a flag to true on ground collision detected. Used eg in obj_fox step event
@@ -65,7 +70,16 @@ if (dx > 0)
 	
 	if (t1 != 0 || t2 != 0)
 	{
-	x = ((bbox_right & ~ 15) - 1) - sprite_bbox_right; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+	//x = ((bbox_right & ~ 15) - 1) - sprite_bbox_right; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+	
+	if (image_yscale==0.6) {
+			if (object_index == obj_enemySkeleton)
+				x = (x&~9); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+			if (object_index == obj_fox)
+				x = (x&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		}
+		else
+			x = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 	
 	}
 }
@@ -75,7 +89,14 @@ else {//left
 	
 	if (t1 != 0 || t2 != 0) 
 	{
-	x = ((bbox_left + 16) & ~ 15) - sprite_bbox_left; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
-	
+	//x = ((bbox_left + 16) & ~ 15) - sprite_bbox_left; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+	if (image_yscale==0.6) {
+			if (object_index == obj_enemySkeleton)
+				x = (x&~9); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+			if (object_index == obj_fox)
+				x = (x&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		}
+		else
+			x = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 	}
 }
