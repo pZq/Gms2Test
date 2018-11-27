@@ -23,12 +23,14 @@ with(hurtbox){
 	//if (owner.object_index == 5) {
 		// If (current character hurtbox meets a hurtbox) AND (the owner of this hurtbox (soldier) type == type of soldier)
 		if(place_meeting(x+(dx*other.facing),y, obj_hurtbox)) {
-			owner.speed=0;
+			//owner.speed=0;
+			owner.move_speed=0;
 			
 		}	
 		// If (current character hurtbox does not meet a hurtbox) AND (the owner of this hurtbox (soldier) type == type of soldier)
 		if (!place_meeting(x+(dx*other.facing),y, obj_hurtbox)) {
-			owner.speed=1*other.facing;
+			//owner.speed=1*other.facing;
+			owner.move_speed=1*other.facing;;
 			owner.image_speed=1;
 		}
 	//}

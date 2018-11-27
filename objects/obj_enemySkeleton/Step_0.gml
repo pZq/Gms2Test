@@ -6,7 +6,8 @@ ObjectCollision(move_speed, v_speed, grav, tilemap, sprite_bbox_bottom, sprite_b
 // if soldier dies -> play sound, play death animation...
 if (hp <= 0 && !CharacterDies) { // this if  means -> if healthpoints below or equal 0 -> stop object instance movement
 	CharacterDies=true;
-	speed=0;
+	//speed=0;
+	move_speed=0;
 	image_speed = 0;
 	
 	snd = audio_play_sound(snd_skeletonDeath,0,false);

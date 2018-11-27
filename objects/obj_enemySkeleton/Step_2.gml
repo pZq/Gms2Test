@@ -13,7 +13,8 @@ if(hit){
 	// game will crash when skeleton dies...
 	if (hp <= 0) {
 		instance_destroy(hurtbox);
-		hitBy.owner.speed=1;
+		//hitBy.owner.speed=1;
+		hitBy.owner.move_speed=1;
 		hitBy.owner.image_speed=1;
 		alarm[0]=room_speed*3;
 	}

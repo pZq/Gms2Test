@@ -3,8 +3,8 @@
 /// @param {real} facing Direction object is looking at (1 to right, -1 to left)
 
 // basic player info
-move_speed = 0;
-jump_impulse= 0; // ???
+move_speed = 1;
+jump_impulse= 21; // ???
 grav = 0.5;
 v_speed = 0;
 GroundCollision=false;
