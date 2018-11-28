@@ -36,12 +36,13 @@ if (dy > 0)
 	{
 		if (image_yscale==0.6) {
 			if (object_index == obj_enemySkeleton)
-				y = (y&~9); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+				y = (y&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 			if (object_index == obj_fox)
 				y = (y&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 		}
-		else
-			y = ((bbox_bottom & ~ 15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		else {
+			y = ((bbox_bottom & ~15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		}
 		
 		v_speed = 0;
 		
@@ -63,7 +64,7 @@ else {//upwards
 			y = (y&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 	}
 	else
-		y = ((bbox_top & ~ 16) - 15) - sprite_bbox_top; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		y = ((bbox_top + 16) & ~15) - sprite_bbox_top; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 		
 	v_speed = 0;
 	}
@@ -72,6 +73,8 @@ else {//upwards
 //horizontal movement
 x += dx;
 
+
+// below -> https://youtu.be/7NHJ6A34V6I?t=1505
 /*
 if (dx > 0)  
 	{ //right
@@ -80,7 +83,6 @@ if (dx > 0)
 	
 	if (t1 != 0 || t2 != 0)
 	{
-	//x = ((bbox_right & ~ 15) - 1) - sprite_bbox_right; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 	
 	if (image_yscale==0.6) {
 			if (object_index == obj_enemySkeleton)
@@ -89,7 +91,7 @@ if (dx > 0)
 				x = (x&~8); //x = ((bbox_right & ~ 8) - 1) - sprite_bbox_right; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 		}
 	else
-		x = ((bbox_right & ~ 15) - 1) - sprite_bbox_right; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		x = ((bbox_right & ~15) - 1) - sprite_bbox_right; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 	
 	}
 }
@@ -99,7 +101,6 @@ else {//left
 	
 	if (t1 != 0 || t2 != 0) 
 	{
-	//x = ((bbox_left + 16) & ~ 15) - sprite_bbox_left; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 	if (image_yscale==0.6) {
 			if (object_index == obj_enemySkeleton)
 				x=((bbox_left & ~ 9) - 8) - sprite_bbox_left; //x = (x&~9); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
@@ -107,7 +108,7 @@ else {//left
 				x=((bbox_left & ~ 8) - 7) - sprite_bbox_left; //x = (x&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 	}
 	else
-		x = ((bbox_left & ~ 16) - 15) - sprite_bbox_left; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+		x = ((bbox_left + 16) & ~15) - sprite_bbox_left; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 	}
 }
 */
