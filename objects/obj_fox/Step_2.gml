@@ -11,6 +11,7 @@ if(hit){
 	if (hp <= 0) {
 		//hitBy.owner.speed=1;
 		hitBy.owner.move_speed = 1;
+		hitBy.owner.sprite_index=spr_skeletonWalk;
 		hitBy.owner.image_speed=1;
 		instance_destroy(hurtbox);
 		alarm[0]=room_speed*3;

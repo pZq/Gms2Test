@@ -15,6 +15,7 @@ if(hit){
 		instance_destroy(hurtbox);
 		//hitBy.owner.speed=1;
 		hitBy.owner.move_speed=1;
+		hitBy.owner.sprite_index=spr_testiukko11walk;
 		hitBy.owner.image_speed=1;
 		alarm[0]=room_speed*3;
 	}
