@@ -61,6 +61,7 @@ if (hp>0) {
 			sprite_index = spr_skeletonAttack;
 			snd = audio_play_sound (choose (snd_axeHit1,snd_axeHit2),0,false)	
 			AttackStarted = true;
+			instance_create_layer(x,y,"Instances", obj_arrow);
 		}
 		
 		// ukkeli attack sprite is 7 fps, game gps = 60 -> 60/7 = 8.57
