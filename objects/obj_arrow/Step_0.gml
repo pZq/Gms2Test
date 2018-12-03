@@ -8,4 +8,4 @@ if (!GroundCollision)
 	
 //direction = point_direction(x, y, ex, ey);
 
-image_angle+=5;
+image_angle = point_direction(x, y, ex, ey);
