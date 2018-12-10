@@ -2,6 +2,21 @@
 //scripti toimii nyt ilman physiikkaa. eli otin sen pois roomin asetuksista
 // tähän voisi vielä lisätä hyppykoodin mutta sitä en vielä laittanut
 
+// Tähän pitää lisätä (kaikille gameobjekteille) ja poistaa CharacterInitialize funktiosta pois
+// Tää ao. example koodi pitää myös tehä arrowille.
+/*
+//tile map info
+var l = layer_get_id("collission") ;
+tilemap = layer_tilemap_get_id(l) ;
+*/
+// sitten seuraavaan ao. funktioon pitää lisäargumenttina antaa tää tilemappi.
+// tällä tapaa voidaan ehkä antaa eri collision tilejä if ehdoilla riippuen minkä kokonen tyyppi
+// on kyseessä jne.
+// -> var l;
+// -> if (image_yscale==0.6) l = layer_get_id("collission") ;
+// -> else l = layer_get_id("collissionBack");
+// -> tilemap = layer_tilemap_get_id(l);
+// -> CharacterInitialize(FacingRight, tilemap);
 CharacterInitialize(FacingRight);
 
 /*
