@@ -12,7 +12,8 @@
         "1905390d-9c17-4ed5-a3fd-19e8825801dc",
         "bc50fcd5-07cf-4ec5-b5ee-1484c5d7d22a",
         "83801fe9-a320-4a28-ad72-d1d93dec9fe7",
-        "ace7b3c6-1158-4ba6-92ea-4c8d1a8585ba"
+        "ace7b3c6-1158-4ba6-92ea-4c8d1a8585ba",
+        "6515cb2c-4683-41fe-902e-b711b361873d"
     ],
     "filterType": "GMSprite",
     "folderName": "TestiUkko",
