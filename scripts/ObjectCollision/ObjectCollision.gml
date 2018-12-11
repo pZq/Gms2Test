@@ -39,9 +39,14 @@ if (dy > 0)
 				y = (y&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 			if (object_index == obj_fox)
 				y = (y&~8); //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+			
 		}
 		else {
-			y = ((bbox_bottom & ~15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
+			// ei oikee keksi miten sais ylä tason arrowin osumaan collision tileen ettei jäis ilmaan
+			if (object_index == obj_arrow)
+				y = (y&~15);
+			else
+				y = ((bbox_bottom & ~15) - 1) - sprite_bbox_bottom; //15 on gridistä yhden pienempi, eli käytämme 16 gridiä
 		}
 		
 		v_speed = 0;
