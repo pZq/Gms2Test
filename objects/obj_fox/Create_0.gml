@@ -4,11 +4,12 @@
 
 // Tähän pitää lisätä (kaikille gameobjekteille) ja poistaa CharacterInitialize funktiosta pois
 // Tää ao. example koodi pitää myös tehä arrowille.
-/*
 //tile map info
+/*
 var l = layer_get_id("collission") ;
 tilemap = layer_tilemap_get_id(l) ;
 */
+
 // sitten seuraavaan ao. funktioon pitää lisäargumenttina antaa tää tilemappi.
 // tällä tapaa voidaan ehkä antaa eri collision tilejä if ehdoilla riippuen minkä kokonen tyyppi
 // on kyseessä jne.

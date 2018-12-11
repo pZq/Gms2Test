@@ -1,7 +1,13 @@
 // counting frames
 FrameCounter();
 
+if (image_yscale==0.6) 
+	tilemap = tilemap1;
+else
+	tilemap = tilemap2;
+
 ObjectCollision(move_speed, v_speed, grav, tilemap, sprite_bbox_bottom, sprite_bbox_top, sprite_bbox_right, sprite_bbox_left);
+	
 
 // if soldier dies -> play sound, play death animation...
 if (hp <= 0 && !CharacterDies) { // this if  means -> if healthpoints below or equal 0 -> stop object instance movement

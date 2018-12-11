@@ -44,8 +44,13 @@ currentState = 0; // käytetään esim HitState() skripti funktiossa
 lastState = 0; // en tiiä mihin tätä käytetää.
 
 //tile map info
-var l = layer_get_id("collission") ;
-tilemap = layer_tilemap_get_id(l) ;
+var l1, l2;
+l1 = layer_get_id("collissionBack");
+l2 = layer_get_id("collission");
+	
+tilemap1 = layer_tilemap_get_id(l1);
+tilemap2 = layer_tilemap_get_id(l2);
+
 
 // Health bar info
 pc=0;
